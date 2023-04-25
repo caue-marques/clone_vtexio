@@ -2,31 +2,30 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
+      "flex-layout.row#presente",
       "flex-layout.row#shelf",
+      "flex-layout.row#destaque",
+      "flex-layout.row#vitrine",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
     ]
   },
-
   "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+    "children": [
+      "slider-layout#demo-images"
+    ],
     "props": {
-      "height": 720,
+      "height": 215,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://merciwithlove.vteximg.com.br/arquivos/ids/203782/proj-banner-dia-das-mães-23-mobile.png?v=638175187290200000",
+          "mobileImage": "https://merciwithlove.vteximg.com.br/arquivos/ids/203782/proj-banner-dia-das-mães-23-mobile.png?v=638175187290200000"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://merciwithlove.vteximg.com.br/arquivos/ids/203718/banner-adele-pocket-corrente-mobile.png?v=638168308572900000",
+          "mobileImage": "https://merciwithlove.vteximg.com.br/arquivos/ids/203718/banner-adele-pocket-corrente-mobile.png?v=638168308572900000"
         }
       ]
     }
@@ -39,38 +38,108 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
       "blockClass": "carousel"
     }
   },
-
-  "rich-text#shelf-title": {
+  "flex-layout.row#presente": {
+    "children": [
+      "rich-text#textoPresente"
+    ]
+  },
+  "rich-text#textoPresente": {
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "text": "UM PRESENTE PARA CADA OCASIÃO",
+      "blockClass": "rowPresente"
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": [
+      "list-context.image-list#demo1"
+    ]
   },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+  "list-context.image-list#demo1": {
+    "children": [
+      "slider-layout#presente-images"
+    ],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "height": 360,
+      "images": [
+        {
+          "image": "https://merciwithlove.vteximg.com.br/arquivos/ids/203782/proj-banner-dia-das-mães-23-mobile.png?v=638175187290200000",
+          "mobileImage": "https://merciwithlove.vteximg.com.br/arquivos/ids/187045/minibanner_infantil.jpg?v=637420428447700000"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+          "mobileImage": "https://merciwithlove.vteximg.com.br/arquivos/ids/187044/minibanner_bolsas.jpg?v=637420421479230000"
+        },
+        {
+          "image": "https://merciwithlove.vteximg.com.br/arquivos/ids/187046/minibanner-acessorios copy.JPG.jpg?v=637420429334930000",
+          "mobileImage": "https://merciwithlove.vteximg.com.br/arquivos/ids/187046/minibanner-acessorios copy.JPG.jpg?v=637420429334930000"
+        }
+      ]
     }
   },
-  "slider-layout#demo-products": {
+  "slider-layout#presente-images": {
     "props": {
+      "autoplay": {
+        "timeout": 2000,
+        "stopOnHover": false
+      },
       "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
+        "desktop": 1,
+        "tablet": 1,
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "carousel"
     }
+  },
+  "flex-layout.row#destaque": {
+    "children": [
+      "rich-text#textoDestaque"
+    ]
+  },
+  "rich-text#textoDestaque": {
+    "props": {
+      "text": "PRODUTOS EM DESTAQUE",
+      "blockClass": "rowPresente"
+    }
+  },
+
+  "flex-layout.row#vitrine": {
+    "children": [
+      "list-context.product-list#vitrine"
+    ]
+  },
+  "list-context.product-list#vitrine": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#vitrine"
+    ]
+  },
+  "slider-layout#vitrine": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always"
+    }
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-name",
+      "product-summary-price"
+    ]
   },
 
   "info-card#home": {
@@ -86,14 +155,12 @@
       "textAlignment": "center"
     }
   },
-
   "rich-text#question": {
     "props": {
       "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
       "blockClass": "question"
     }
   },
-
   "rich-text#link": {
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",

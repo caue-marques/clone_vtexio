@@ -7,6 +7,7 @@
 .sellingPrice {
   color: #3f3f40;
   font-size: 1.25rem;
+  font-weight: 200;
 }
 
 .sellingPriceValue {
@@ -14,9 +15,15 @@
   font-weight: 700;
 }
 
+.currencyContainer {
+  color: #000;
+  font-weight: 100;
+}
+
 .installments {
   color: #727273;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .savings {
