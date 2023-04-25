@@ -18,8 +18,9 @@
 }
 
 .nameContainer {
-  justify-content: start;
-  padding-top: 1rem;
+  font-size: 1.2em;
+  justify-content: center;
+  padding-top: 0.3em;
   padding-bottom: 1rem;
 }
 
@@ -31,10 +32,12 @@
 
 .container {
   text-align: start;
+  margin-left: 50px;
 }
 
 .imageContainer {
   text-align: center;
+  width: 150px;
 }
 
 .image {

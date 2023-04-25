@@ -88,3 +88,10 @@
     line-height: 1.3em;
   }
 }
+
+.container--rowPresente {
+  justify-content: center;
+  color: #73708b;
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
