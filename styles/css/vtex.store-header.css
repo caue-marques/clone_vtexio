@@ -82,3 +82,7 @@
     transition: none;
   }
 }
+
+.headerRowContentContainer--header-mobile {
+  padding: 0;
+}

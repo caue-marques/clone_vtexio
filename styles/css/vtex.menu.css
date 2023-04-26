@@ -1,4 +1,6 @@
 .styledLinkContent {
+    letter-spacing: 0.08em;
+    flex-direction: row-reverse;
     padding: 1.15em 0;
     color: #404040;
     font-size: 0.8em;
@@ -8,5 +10,5 @@
 }
 
 .menuContainerNav {
-    width: 75%;
+    width: 95%;
 }

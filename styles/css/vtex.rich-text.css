@@ -22,6 +22,7 @@
   justify-content: center;
 }
 
+
 .container--question {
   justify-content: center;
 }
@@ -45,7 +46,10 @@
   max-width: 540px;
   padding-top: 36px;
   padding-bottom: 84px;
-  color: #03034E;
+  color: #73708b;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.03rem;
 }
 
 .container--link .strong {
@@ -92,6 +96,28 @@
 .container--rowPresente {
   justify-content: center;
   color: #73708b;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0.3rem 0;
+  letter-spacing: 0.03em;
 }
+
+.container--rowDestaque {
+  justify-content: center;
+  color: #73708b;
+  font-weight: 700;
+  margin: 0.3rem 0;
+  letter-spacing: 0.03em;
+}
+
+.wrapper--participantes {
+  width: 100%;
+  display: flex;
+}
+
+.wrapper--participantes :global(.vtex-rich-text-0-x-paragraph) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+

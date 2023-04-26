@@ -117,27 +117,23 @@
     ]
   },
   "flex-layout.row#2-mobile": {
-    "children": [
-      "notification.bar#homeMobile"
-    ]
-  },
-  "notification.bar#homeMobile": {
     "props": {
-      "content": "-"
+      "blockClass": "notificationBar"
     }
   },
   "header-row#1-mobile": {
     "children": [
       "flex-layout.row#1-mobile"
-    ]
+    ],
+    "props": {
+      "blockClass": "header-mobile"
+    }
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
       "logo#searchIconMobile",
-      "flex-layout.col#spacer",
       "logo#mobile",
-      "flex-layout.col#spacer",
       "login#mobile",
       "minicart.v2"
     ],
@@ -149,6 +145,9 @@
     }
   },
   "drawer": {
+    "props": {
+      "maxWidth": 844 
+    },
     "children": [
       "menu#drawer"
     ]
@@ -176,7 +175,15 @@
         "noFollow": false,
         "tagTitle": "VIAGENS",
         "text": "VIAGENS"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "menu-item#category-paraEla": {
@@ -188,7 +195,16 @@
         "noFollow": false,
         "tagTitle": "PARA ELA",
         "text": "PARA ELA"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
+    
     }
   },
   "menu-item#category-paraEle": {
@@ -200,7 +216,15 @@
         "noFollow": false,
         "tagTitle": "PARA ELE",
         "text": "PARA ELE"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "menu-item#category-infantil": {
@@ -212,7 +236,15 @@
         "noFollow": false,
         "tagTitle": "INFANTIL",
         "text": "INFANTIL"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "menu-item#category-diaDia": {
@@ -224,7 +256,15 @@
         "noFollow": false,
         "tagTitle": "DIA A DIA",
         "text": "DIA A DIA"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "menu-item#category-prontaEntrega": {
@@ -236,7 +276,15 @@
         "noFollow": false,
         "tagTitle": "PRONTA ENTREGA",
         "text": "PRONTA ENTREGA"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "menu-item#category-sale": {
@@ -248,7 +296,15 @@
         "noFollow": false,
         "tagTitle": "SALE",
         "text": "SALE"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "login#mobile": {
@@ -261,7 +317,8 @@
       "title": "Search Icon",
       "href": "/",
       "url": "https://img.icons8.com/ios-glyphs/256/search.png",
-      "width": "30"
+      "width": "50",
+      "blockClass": "searchIconMobile"
     }
   },
   "logo#mobile": {

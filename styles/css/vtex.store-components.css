@@ -6,6 +6,9 @@
   text-decoration: none;
 }
 
+.flexRowContent--main-header-mobile {
+  width: 100%;
+}
 
 .infoCardContainer--info-card-home {
   max-width: 1520px;
@@ -111,4 +114,20 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+.infoCardContainer--entrega {
+  background-color: #000000;
+}
+
+.container--header-mobile :global(.vtex-store-components-3-x-container ) {
+  padding: 0;
+}
+
+.logoContainer--searchIconMobile {
+  margin-left: -30px;
+}
+
+.logoContainer {
+  padding: 0px;
 }

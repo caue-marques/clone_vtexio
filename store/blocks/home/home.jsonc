@@ -6,10 +6,10 @@
       "flex-layout.row#shelf",
       "flex-layout.row#destaque",
       "flex-layout.row#vitrine",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#underDestaque",
+      "flex-layout.row#entrega",
+      "rich-text#siganos"
+      // "newsletter"
     ]
   },
   "list-context.image-list#demo": {
@@ -64,7 +64,7 @@
       "slider-layout#presente-images"
     ],
     "props": {
-      "height": 360,
+      "height": 500,
       "images": [
         {
           "image": "https://merciwithlove.vteximg.com.br/arquivos/ids/203782/proj-banner-dia-das-mães-23-mobile.png?v=638175187290200000",
@@ -106,7 +106,7 @@
   "rich-text#textoDestaque": {
     "props": {
       "text": "PRODUTOS EM DESTAQUE",
-      "blockClass": "rowPresente"
+      "blockClass": "rowDestaque"
     }
   },
 
@@ -142,28 +142,33 @@
     ]
   },
 
-  "info-card#home": {
+  "flex-layout.row#underDestaque": {
+    "children": ["image#casamento"],
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+      "blockClass": "casamento"
+    }
+  
+  },
+
+  "flex-layout.row#entrega": {
+    "children": ["image#entrega"],
+    "props": {
+      "blockClass": "entrega"
     }
   },
-  "rich-text#question": {
+  "image#casamento": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ids/171095/casamento.png?v=636849874858770000"
     }
   },
-  "rich-text#link": {
+  "image#entrega": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3).png?v=637045447182430000"
+    }
+  },
+  "rich-text#siganos": {
+    "props": {
+      "text": "\nSIGA-NOS @merciwithlove",
       "blockClass": "link"
     }
   }
