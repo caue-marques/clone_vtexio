@@ -7,9 +7,9 @@
       "flex-layout.row#destaque",
       "flex-layout.row#vitrine",
       "flex-layout.row#underDestaque",
-      "flex-layout.row#entrega",
-      "rich-text#siganos"
-      // "newsletter"
+      "info-card#entrega",
+      "rich-text#siganos",
+      "flex-layout.row#sobre-nos"
     ]
   },
   "list-context.image-list#demo": {
@@ -109,7 +109,6 @@
       "blockClass": "rowDestaque"
     }
   },
-
   "flex-layout.row#vitrine": {
     "children": [
       "list-context.product-list#vitrine"
@@ -141,19 +140,26 @@
       "product-summary-price"
     ]
   },
-
   "flex-layout.row#underDestaque": {
-    "children": ["image#casamento"],
+    "children": [
+      "image#casamento"
+    ],
     "props": {
       "blockClass": "casamento"
     }
-  
   },
-
-  "flex-layout.row#entrega": {
-    "children": ["image#entrega"],
+  "info-card#entrega": {
     "props": {
-      "blockClass": "entrega"
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://merciwithlove.vteximg.com.br/arquivos/ids/176799/Merci-With-Love-Ready-to-Go-04.png?v=637051881238100000",
+      "headline": "Merci ready to go",
+      "subhead": "Conheça os produtos que podem ser personalizados em 3 dias úteis e enviados para todo brasil.",
+      "callToActionText": "IR PARA PRONTA ENTREGA",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass": "info-card-entrega"
     }
   },
   "image#casamento": {
@@ -163,13 +169,59 @@
   },
   "image#entrega": {
     "props": {
-      "src": "https://merciwithlove.vteximg.com.br/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3).png?v=637045447182430000"
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ids/176799/Merci-With-Love-Ready-to-Go-04.png?v=637051881238100000"
     }
   },
   "rich-text#siganos": {
     "props": {
       "text": "\nSIGA-NOS @merciwithlove",
       "blockClass": "link"
+    }
+  },
+  "flex-layout.row#sobre-nos": {
+    "children": [
+      "flex-layout.row#logo-texto",
+      "flex-layout.row#newsletter"
+    ],
+    "props": {
+      "blockClass": "logo-texto"
+    }
+  },
+  "flex-layout.row#logo-texto": {
+    "children": [
+      "image#marca",
+      "rich-text#titleSobre",
+      "rich-text#descSobre"
+    ]
+  },
+  "image#marca": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/merci-logo-marca.png?v=636847351626730000",
+      "blockClass": "image-marca"
+    }
+  },
+  "rich-text#titleSobre": {
+    "props": {
+      "text": "\nSOBRE A MARCA",
+      "blockClass": "sobreTitle"
+    }
+  },
+  "rich-text#descSobre": {
+    "props": {
+      "text": "\nA MerciWithLove é uma marca de artigos de couro 100% natural em que tudo pode ser personalizado de acordo com o desejo de cada cliente.",
+      "blockClass": "sobreTexto"
+    }
+  },
+  "flex-layout.row#newsletter": {
+    "children": [
+      "newsletter"
+    ]
+  },
+  "newsletter": {
+    "props": {
+      "label": "NEWSLETTER",
+      "submit": "SUBSCRIBE",
+      "placeholder": "Digite seu e-mail"
     }
   }
 }

@@ -1,3 +1,10 @@
 .buttonLink :global(.vtex-button__label) {
-    margin-right: -80px;
+    display: none;
+}
+
+.buttonLink {
+    background-image: url("https://merciwithlove.vteximg.com.br/arquivos/ico-user.png");
+    background-repeat: no-repeat;
+    width: 2.5rem;
+    height: 2.1rem;
 }

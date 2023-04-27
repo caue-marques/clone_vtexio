@@ -42,12 +42,14 @@
   color: gray;
 }
 
-.paginationDot--isActive {
-  background-color: #8F8DA2;
+.sliderLayoutContainer .paginationDot--isActive {
+  background-color: #73708b;
 }
 
 /* Não ta pegando (sendo substituido por alguem) */
 .paginationDot {
-  height: 1rem;
-  width: 1rem;
+  height: 1rem !important;
+  width: 1rem !important;
+  border: 1px solid #73708b;
+  background-color: white;
 }

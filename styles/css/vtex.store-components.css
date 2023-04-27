@@ -18,42 +18,66 @@
 }
 
 .newsletter {
-  background-color: #03054e;
-  max-width: 1528px;
+  background-color: #f0f0f0;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
 .newsletter .container {
-  padding: 60px 10px;
+  padding: 15px 14px 15px;
+  border-top-left-radius: 92px;
+  border-top-right-radius: 92px;
+  background-color: #fff;
+  margin-top: 3.8rem;
 }
 
 .label {
-  color: #fff;
-  font-size: 26px;
+  color: #73708b;
+  font-size: .8rem;
+  font-weight: 100;
+  line-height: 1.6;
+  letter-spacing: 2.5px;
 }
 
 .inputGroup {
   padding-bottom: 4px;
-  display: flex;
+  display: block;
   color: #fff;
+}
+
+.inputGroup :global(.vtex-input-prefix__group) {
+  border: none;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
   background-color: transparent;
   color: #fff;
   border: none;
+  text-align: center;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
-  color: #fff;
-  font-size: 16px;
+  border: 1px solid #f0f0f0;
+  font-weight: normal;
+  font-size: 14px;
+  color: #384238;
+  letter-spacing: .15em;
+  font-style: italic;
 }
 
 .inputGroup :global(.vtex-button) {
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  margin-right: -24px;
+  width: 100%;
+  height: 33px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 33px;
+  color: #73708b;
+  letter-spacing: .18em;
+  background: transparent;
+  border: 1px solid;
+  text-transform: uppercase;
+  margin-top: 8px;
 }
 
 .buttonContainer {
@@ -120,14 +144,55 @@
   background-color: #000000;
 }
 
-.container--header-mobile :global(.vtex-store-components-3-x-container ) {
+.container--header-mobile :global(.vtex-store-components-3-x-container) {
   padding: 0;
 }
 
 .logoContainer--searchIconMobile {
-  margin-left: -30px;
+  margin-left: -25px;
 }
 
 .logoContainer {
   padding: 0px;
+}
+
+.imageElement--image-marca {
+  margin-top: 3rem;
+}
+
+.infoCardContainer--info-card-entrega {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.infoCardTextContainer--info-card-entrega {
+  position: absolute;
+  margin-bottom: 130px;
+}
+
+.infoCardHeadline, .infoCardSubhead {
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.infoCardSubhead {
+  width: 95%;
+  text-align: center;
+}
+
+.infoCardTextContainer :global(.vtex-button) {
+  display: block;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent;
+    font-weight: normal;
+}
+
+.infoCardCallActionContainer {
+  width: 100%;
 }

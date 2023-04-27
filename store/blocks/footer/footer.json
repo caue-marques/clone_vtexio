@@ -124,7 +124,8 @@
   "flex-layout.row#1-footer-mobile": {
     "props": {
       "paddingTop": 4,
-      "paddingBottom": 4
+      "paddingBottom": 4,
+      "blockClass": "footer-mobile"
     },
     "children": [
       "vtex.menu@2.x:menu#footer-mobile"

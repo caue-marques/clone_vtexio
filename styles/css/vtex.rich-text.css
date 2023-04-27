@@ -44,8 +44,7 @@
 .container--link .paragraph {
   text-align: center;
   max-width: 540px;
-  padding-top: 36px;
-  padding-bottom: 84px;
+  padding-bottom: 1rem;
   color: #73708b;
   font-weight: 600;
   font-size: 1.3rem;
@@ -121,3 +120,29 @@
   gap: 0.8rem;
 }
 
+.container--redes-sociais-mobile {
+  color: white;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.paragraph--redes-sociais-mobile {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+.container--sobreTitle {
+  justify-content: center;
+  color: #73708b;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.03rem;
+  padding: 0;
+}
+
+.paragraph--sobreTexto {
+  text-align: center;
+  color: #73708b;
+  margin: 0 auto;
+  
+}
