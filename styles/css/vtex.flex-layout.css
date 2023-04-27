@@ -168,3 +168,11 @@
 .flexRow--main-header-mobile :global(.vtex-store-drawer-0-x-menuIcon) {
   color: #73708b;
 }
+
+.flexRow--vazia {
+  height: 40px;
+}
+
+.flexRow--vitrine2 :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+  margin-bottom: -30px;
+}
