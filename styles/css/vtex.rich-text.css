@@ -92,6 +92,12 @@
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .container--rowPresente {
+    font-size: 1.6rem;
+  }
+}
+
 .container--rowPresente {
   justify-content: center;
   color: #73708b;
@@ -151,4 +157,21 @@
   .flexRowContent--sobre-marca :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     width: 100%;
   }
+}
+
+.container--produtos-personalizados {
+  width: 80% !important;
+  justify-content: end;
+}
+
+.container--vezes-juros {
+  width: 95% !important;
+}
+
+.paragraph--text-header-desktop {
+  font-size: .9rem;
+}
+
+.container--text-header-desktop-pronta {
+  font-size: .9rem;
 }

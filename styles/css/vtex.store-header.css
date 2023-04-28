@@ -87,7 +87,10 @@
   padding: 0;
 }
 
-@media screen and (min-width: 750px) {
-  
+.headerRowBackground--sticky-header {
+  margin-bottom: 1.3em;
 }
 
+.headerRowContentContainer--sticky-header {
+  margin-top: .8rem;
+}

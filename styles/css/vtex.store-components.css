@@ -81,7 +81,29 @@
   margin: 1rem 0;
 }
 
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 1024px) {
+  .notificationBarContainer--home-notification-bar {
+    height: 1.3rem;
+  }
+
+  .notificationBarInner--home-notification-bar {
+    min-height: 1.3rem;
+  }
+
+  .logoLink--searchDesktop {
+    padding: 0;
+    margin-top: 1.2rem;
+    margin-right: -4rem;
+    margin-left: 3rem;
+  }
+
+  .logoLink--logoDesktop {
+    margin-top: -.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 630px) and (max-width: 1023px) {
   /* .newsletter .container {
     padding: 140px;
   } */
@@ -94,7 +116,7 @@
     margin-right: 3rem;
     margin-left: 0;
   }
-  
+
   .label {
     font-size: 40px;
   }
@@ -167,6 +189,36 @@
   flex-direction: column-reverse;
 }
 
+.infoCardContainer--info-card-entregaDesktop {
+  background-image: url("https://merciwithlove.vtexassets.com/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3).png?v=637045447182430000");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.infoCardImage--info-card-entregaDesktop {
+  display: none;
+}
+
+.infoCardTextContainer--info-card-entregaDesktop {
+  width: 30%;
+  margin-left: 15rem;
+  align-items: start;
+  line-height: 1.5rem;
+}
+
+.infoCardSubhead--info-card-entregaDesktop {
+  text-align: start !important;
+}
+
+.infoCardTextContainer--info-card-entregaDesktop :global(.vtex-button) {
+  margin-left: 0 !important;
+  width: 360px;
+} 
+
+.infoCardTextContainer--info-card-entregaDesktop :global(.vtex-store-components-3-x-infoCardCallActionContainer) {
+  text-decoration: none;
+}
+
 .infoCardContainer :global(.vtex-store-components-3-x-infoCardImageContainer) {
   width: 100%;
 }
@@ -184,7 +236,8 @@
   text-decoration: none;
 }
 
-.infoCardHeadline, .infoCardSubhead {
+.infoCardHeadline,
+.infoCardSubhead {
   color: white;
   font-size: 1rem;
   font-weight: normal;
@@ -197,15 +250,15 @@
 
 .infoCardTextContainer :global(.vtex-button) {
   display: block;
-    padding: 10px 10px;
-    text-transform: uppercase;
-    border: 1px solid #fff;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    background-color: transparent;
-    font-weight: normal;
-    border-radius: 0;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color: transparent;
+  font-weight: normal;
+  border-radius: 0;
 }
 
 .infoCardCallActionContainer {

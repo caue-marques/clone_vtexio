@@ -53,3 +53,10 @@
   border: 1px solid #73708b;
   background-color: white;
 }
+
+@media only screen and (min-width: 1024px) {
+
+  .sliderTrackContainer--sliderTopHome {
+    width: 100%;
+  }
+}

@@ -1,17 +1,115 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile",
       "flex-layout.row#presente",
-      "flex-layout.row#shelf",
+      "responsive-layout.desktop#desktopShelf",
+      "responsive-layout.mobile#mobileShelf",
+      "flex-layout.row#spacer",
       "flex-layout.row#destaque",
       "flex-layout.row#vitrine",
-      "flex-layout.row#underDestaque",
-      "info-card#entrega",
+      "responsive-layout.desktop#desktopUnderDestaque",
+      "responsive-layout.mobile#mobileUnderDestaque",
+      "responsive-layout.desktop#desktopInfoEntrega",
+      "responsive-layout.mobile#mobileInfoEntrega",
       "rich-text#siganos",
       "flex-layout.row#sobre-nos"
     ]
   },
+
+  "responsive-layout.desktop#desktopInfoEntrega": {
+    "children": ["info-card#entrega-desktop"]
+  },
+
+  "responsive-layout.mobile#mobileInfoEntrega": {
+    "children": ["info-card#entrega"]
+  },
+
+  
+  "responsive-layout.mobile#mobileUnderDestaque": {
+    "children": ["flex-layout.row#underDestaque"]
+  },
+
+  "responsive-layout.desktop#desktopUnderDestaque": {
+    "children": ["image#dekstopUnderDestaque"]
+  },
+
+  "image#dekstopUnderDestaque": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ids/171053/casamento-banner.png?v=636847326978870000"
+    }
+  },
+
+  "flex-layout.row#spacer": {
+    "props": {
+      "blockClass": "spacerRowHome"
+    }
+  },
+
+  "responsive-layout.mobile#mobileShelf": {
+    "children": ["flex-layout.row#shelf"]
+  },
+
+  "responsive-layout.desktop#desktop": {
+    "children": ["image#topHomeImage"]
+  },
+
+  "image#topHomeImage": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ids/203781/proj-banner-dia-das-mães-23-desktop.jpg?v=638175186774170000"
+    }
+  },
+
+  "responsive-layout.mobile#mobile": {
+    "children": [
+      "list-context.image-list#demo"
+    ]
+  },
+
+  "responsive-layout.desktop#desktopShelf": {
+    "children": [
+      "flex-layout.row#rowShelfDesktop"
+    ]
+  },
+
+  "flex-layout.row#rowShelfDesktop": {
+    "children": [
+      "flex-layout.col#colPic1",
+      "flex-layout.col#colPic2",
+      "flex-layout.col#colPic3"
+    ],
+    "props": {
+      "blockClass": "rowShelfDesktop"
+    }
+  },
+
+  "flex-layout.col#colPic1": {
+    "children": ["image#img1ShelfDesktop"]
+  },
+  "flex-layout.col#colPic2": {
+    "children": ["image#img2ShelfDesktop"]
+  },
+  "flex-layout.col#colPic3": {
+    "children": ["image#img3ShelfDesktop"]
+  },
+
+  "image#img1ShelfDesktop": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ids/187044/minibanner_bolsas.jpg?v=637420421479230000"
+    }
+  },
+  "image#img2ShelfDesktop": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ids/187045/minibanner_infantil.jpg?v=637420428447700000"
+    }
+  },
+  "image#img3ShelfDesktop": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ids/187046/minibanner-acessorios copy.JPG.jpg?v=637420429334930000"
+    }
+  },
+
   "list-context.image-list#demo": {
     "children": [
       "slider-layout#demo-images"
@@ -20,7 +118,7 @@
       "height": 215,
       "images": [
         {
-          "image": "https://merciwithlove.vteximg.com.br/arquivos/ids/203782/proj-banner-dia-das-mães-23-mobile.png?v=638175187290200000",
+          "image": "https://merciwithlove.vteximg.com.br/arquivos/ids/203781/proj-banner-dia-das-mães-23-desktop.jpg?v=638175186774170000",
           "mobileImage": "https://merciwithlove.vteximg.com.br/arquivos/ids/203782/proj-banner-dia-das-mães-23-mobile.png?v=638175187290200000"
         },
         {
@@ -40,7 +138,7 @@
       "infinite": true,
       "showNavigationArrows": "always",
       "showPaginationDots": "never",
-      "blockClass": "carousel"
+      "blockClass": "sliderTopHome"
     }
   },
   "flex-layout.row#presente": {
@@ -146,6 +244,20 @@
     ],
     "props": {
       "blockClass": "casamento"
+    }
+  },
+  "info-card#entrega-desktop": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://merciwithlove.vteximg.com.br/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3).png?v=637045447182430000",
+      "headline": "Merci ready to go",
+      "subhead": "Conheça os produtos que podem ser personalizados em 3 dias úteis e enviados para todo brasil.",
+      "callToActionText": "IR PARA PRONTA ENTREGA",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass": "info-card-entregaDesktop"
     }
   },
   "info-card#entrega": {
