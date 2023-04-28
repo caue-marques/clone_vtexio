@@ -120,6 +120,10 @@
   margin-top: 1.5rem;
 }
 
+.flexRow--casamento :global(.vtex-store-components-3-x-imageElement) {
+  width: 100%;
+}
+
 .flexRow--casamento :global(.vtex-store-components-3-x-container) {
   padding: 0;
 }
@@ -154,7 +158,26 @@
 .flexRow--logo-texto {
   background-color: #f0f0f0;
   background-image: url("https://merci2019.vteximg.com.br/arquivos/merci-logo-mask.png");
+  background-repeat: no-repeat;
+  background-position: center top;
   margin-top: .6rem;
+}
+
+.flexRowContent--logo-texto :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 100% !important;
+}
+
+.flexRowContent--sobre-marca {
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexRowContent--logo-texto {
+  flex-direction: column;
+}
+
+.flexRow--newsletter {
+  width: 100%;
 }
 
 .flexRow--footer-mobile :global(.vtex-store-components-3-x-container) {

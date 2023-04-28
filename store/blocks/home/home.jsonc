@@ -192,7 +192,10 @@
       "image#marca",
       "rich-text#titleSobre",
       "rich-text#descSobre"
-    ]
+    ],
+    "props": {
+      "blockClass": "sobre-marca"
+    }
   },
   "image#marca": {
     "props": {
@@ -215,7 +218,10 @@
   "flex-layout.row#newsletter": {
     "children": [
       "newsletter"
-    ]
+    ],
+    "props": {
+      "blockClass": "newsletter"
+    }
   },
   "newsletter": {
     "props": {

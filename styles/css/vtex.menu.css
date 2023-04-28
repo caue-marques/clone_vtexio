@@ -21,6 +21,14 @@
     padding: 0.4rem;
 }
 
+@media only screen and (min-width: 640px) { 
+    .styledLinkContent--footer-options {
+        width: 40%;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+}
+
 .styledLinkContent--footer-options-intern {
     color: white;
     border: none;

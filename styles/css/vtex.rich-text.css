@@ -146,3 +146,9 @@
   margin: 0 auto;
   
 }
+
+@media only screen and (min-width: 750px) {
+  .flexRowContent--sobre-marca :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100%;
+  }
+}
