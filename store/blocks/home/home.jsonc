@@ -217,17 +217,32 @@
   },
   "flex-layout.row#newsletter": {
     "children": [
-      "newsletter"
+      "newsletter-form"
     ],
     "props": {
       "blockClass": "newsletter"
     }
   },
-  "newsletter": {
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-input-name",
+      "newsletter-submit"
+    ]
+  },
+  "newsletter-input-email": {
     "props": {
-      "label": "NEWSLETTER",
-      "submit": "SUBSCRIBE",
-      "placeholder": "Digite seu e-mail"
+      "placeholderText": "Digite seu e-mail"
+    }
+  },
+  "newsletter-input-name": {
+    "props": {
+      "placeholderText": "Digite seu nome"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "SUBSCRIBE"
     }
   }
 }

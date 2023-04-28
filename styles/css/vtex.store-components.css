@@ -17,19 +17,7 @@
   padding: 0px;
 }
 
-.newsletter {
-  background-color: #f0f0f0;
-  max-width: 1080px;
-  margin: 0 auto;
-}
 
-.newsletter .container {
-  padding: 15px 14px 15px;
-  border-top-left-radius: 92px;
-  border-top-right-radius: 92px;
-  background-color: #fff;
-  margin-top: 3.8rem;
-}
 
 .label {
   color: #73708b;
@@ -93,11 +81,20 @@
   margin: 1rem 0;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 630px) {
   /* .newsletter .container {
     padding: 140px;
   } */
 
+  .logoLink {
+    margin-left: 8rem;
+  }
+
+  .logoLink--searchIconMobile {
+    margin-right: 3rem;
+    margin-left: 0;
+  }
+  
   .label {
     font-size: 40px;
   }
@@ -161,14 +158,30 @@
   margin-top: 3rem;
 }
 
+.infoCardTextContainer {
+  width: 100%;
+}
+
 .infoCardContainer--info-card-entrega {
   display: flex;
   flex-direction: column-reverse;
 }
 
+.infoCardContainer :global(.vtex-store-components-3-x-infoCardImageContainer) {
+  width: 100%;
+}
+
+.infoCardContainer :global(.vtex-store-components-3-x-infoCardImage) {
+  width: 100%;
+}
+
 .infoCardTextContainer--info-card-entrega {
   position: absolute;
   margin-bottom: 130px;
+}
+
+.infoCardCallActionContainer--info-card-entrega {
+  text-decoration: none;
 }
 
 .infoCardHeadline, .infoCardSubhead {
@@ -192,6 +205,7 @@
     margin: 0 auto;
     background-color: transparent;
     font-weight: normal;
+    border-radius: 0;
 }
 
 .infoCardCallActionContainer {

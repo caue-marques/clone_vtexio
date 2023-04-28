@@ -176,10 +176,6 @@
   flex-direction: column;
 }
 
-.flexRow--newsletter {
-  width: 100%;
-}
-
 .flexRow--footer-mobile :global(.vtex-store-components-3-x-container) {
   width: 85%;
 }
@@ -198,4 +194,60 @@
 
 .flexRow--vitrine2 :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
   margin-bottom: -30px;
+}
+
+.flexRow--newsletter {
+  width: 100%;
+  background-color: #f0f0f0;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.flexRowContent--newsletter :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  padding: 15px 14px 15px;
+  border-top-left-radius: 92px;
+  border-top-right-radius: 92px;
+  background-color: #fff;
+  margin-top: 3.8rem;
+}
+
+.flexRowContent--newsletter :global(.vtex-store-newsletter-1-x-emailInputContainer) {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.flexRowContent--newsletter :global(.vtex-store-newsletter-1-x-nameInputContainer) {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: .3rem;
+}
+
+.flexRowContent--newsletter :global(.vtex-input-prefix__group) {
+  border: none;
+}
+
+.flexRowContent--newsletter :global(.vtex-styleguide-9-x-input) {
+  letter-spacing: .2em;
+}
+
+.flexRowContent--newsletter :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #384238;
+  text-align: center;
+  font-style: italic;
+}
+
+
+.flexRowContent--newsletter :global(.vtex-button) {
+  margin-top: .3rem;
+  width: 100%;
+  display: block;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #73708b;
+  color: #73708b;
+  background-color: transparent;
+  font-weight: normal;
+  border-radius: 0;
+  letter-spacing: .12em;
 }

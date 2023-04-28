@@ -9,3 +9,13 @@
 .drawer {
     width: 50%;
 }
+
+@media only screen and (min-width: 630px) {
+    /* .newsletter .container {
+      padding: 140px;
+    } */
+  
+    .openIconContainer {
+        margin-left: 1rem;
+    }
+}
