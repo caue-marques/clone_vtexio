@@ -22,14 +22,21 @@
   },
 
   "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
+    "children": ["notification.bar#text1", "notification.bar#text2"],
     "props": {
       "fullWidth": "true"
     }
   },
-  "notification.bar#home": {
+  "notification.bar#text1": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "content": "PRODUTOS PERSONALIZADOS",
+      "blockClass": "text1"
+    }
+  },
+  "notification.bar#text2": {
+    "props": {
+      "content": "EM ATÉ 3X SEM JUROS",
+      "blockClass": "text2"
     }
   },
   "flex-layout.row#3-desktop": {
@@ -136,7 +143,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/logo@2x.png",
       "width": "70"
     }
   }
