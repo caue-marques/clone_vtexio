@@ -1,0 +1,45 @@
+.buttonLink :global(.vtex-button__label) {
+    display: none;
+}
+
+.buttonLink {
+    background-image: url("https://merciwithlove.vteximg.com.br/arquivos/ico-user.png");
+    background-repeat: no-repeat;
+    width: 2.5rem;
+    height: 2.1rem;
+}
+
+@media screen and (min-width: 630px) and (max-width: 1023px) {
+    .container :global(.vtex-button__label) {
+        display: none; 
+    }
+
+    .container {
+        width: 2rem;
+        margin-left: 13rem;
+    }
+
+    .container :global(.vtex-button) {
+        background-image: url("https://merciwithlove.vteximg.com.br/arquivos/ico-user.png");
+        background-repeat: no-repeat;
+        width: 2.5rem;
+        height: 2.1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container :global(.vtex-button__label) {
+        display: none; 
+    }
+
+    .container {
+        width: 2rem;
+    }
+
+    .container :global(.vtex-button) {
+        background-image: url("https://merciwithlove.vteximg.com.br/arquivos/ico-user.png");
+        background-repeat: no-repeat;
+        width: 2.5rem;
+        height: 2.1rem;
+    }
+}

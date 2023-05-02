@@ -4,12 +4,15 @@
 }
 
 @media screen and (min-width: 40em) {
+
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 1rem;
   }
 }
+
 @media screen and (min-width: 80rem) {
+
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 0.25rem;
@@ -22,13 +25,19 @@
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
-  padding: 0.625rem 0.5rem;
-  background-color: #f0f0f0;
+  justify-content: space-between !important;
+  padding: 0.625rem 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+.flexRow--main-header-mobile :global(.vtex-login-2-x-container) {
+  margin-right: -50px;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -40,6 +49,7 @@
   color: #727273;
   font-size: 14px;
 }
+
 .flexRow--deals {
   background-color: #a7afbd;
   padding: 14px 0px;
@@ -92,3 +102,190 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexRowContent {
+  justify-content: center;
+}
+
+.flexRow {
+  width: 100%;
+}
+
+.flexRow--notificationBar {
+  background-color: #73708B;
+  height: 22px;
+}
+
+.flexRow--casamento {
+  margin-top: 1.5rem;
+}
+
+.flexRow--casamento :global(.vtex-store-components-3-x-imageElement) {
+  width: 100%;
+}
+
+.flexRow--casamento :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.flexRow--entrega {
+  width: 100%;
+  height: 900px;
+}
+
+.flexRow--entrega :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.flexRow--payment-methods {
+  background-color: #f0f0f0;
+}
+
+.flexRow--payment-methods :global(.vtex-store-components-3-x-container) {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flexColChild--payment-methods :global(.vtex-rich-text-0-x-paragraph) {
+  color: #73708B;
+  margin: 0;
+}
+
+.flexRow--footer-mobile {
+  background-color: #413f4e;
+}
+
+.flexRow--logo-texto {
+  background-color: #f0f0f0;
+  background-image: url("https://merci2019.vteximg.com.br/arquivos/merci-logo-mask.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: .6rem;
+}
+
+.flexRowContent--logo-texto :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 100% !important;
+}
+
+.flexRowContent--sobre-marca {
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexRowContent--logo-texto {
+  flex-direction: column;
+}
+
+.flexRow--footer-mobile :global(.vtex-store-components-3-x-container) {
+  width: 85%;
+}
+
+.flexRow--footer-mobile :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  margin-top: .5rem;
+}
+
+.flexRow--main-header-mobile :global(.vtex-store-drawer-0-x-menuIcon) {
+  color: #73708b;
+}
+
+.flexRow--vazia {
+  height: 40px;
+}
+
+.flexRow--vitrine2 :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+  margin-bottom: -30px;
+}
+
+.flexRow--newsletter {
+  width: 100%;
+  background-color: #f0f0f0;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.flexRowContent--newsletter :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  padding: 15px 14px 15px;
+  border-top-left-radius: 92px;
+  border-top-right-radius: 92px;
+  background-color: #fff;
+  margin-top: 3.8rem;
+}
+
+.flexRowContent--newsletter :global(.vtex-store-newsletter-1-x-emailInputContainer) {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.flexRowContent--newsletter :global(.vtex-store-newsletter-1-x-nameInputContainer) {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: .3rem;
+}
+
+.flexRowContent--newsletter :global(.vtex-input-prefix__group) {
+  border: none;
+}
+
+.flexRowContent--newsletter :global(.vtex-styleguide-9-x-input) {
+  letter-spacing: .2em;
+}
+
+.flexRowContent--newsletter :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #384238;
+  text-align: center;
+  font-style: italic;
+}
+
+
+.flexRowContent--newsletter :global(.vtex-button) {
+  margin-top: .3rem;
+  width: 100%;
+  display: block;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #73708b;
+  color: #73708b;
+  background-color: transparent;
+  font-weight: normal;
+  border-radius: 0;
+  letter-spacing: .12em;
+}
+
+.flexRowContent--home-notification-bar {
+  background-color: #73708B;
+  color: #FFFFFB;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+  height: 1.3rem;
+}
+
+.flexRowContent--home-notification-bar :global(.vtex-rich-text-0-x-paragraph) {
+  margin: 0;
+  font-size: .75em;
+  color: white;
+  font-weight: 600;
+  letter-spacing: .02rem;
+}
+
+
+.flexRowContent--main-header :global(.vtex-store-components-3-x-logoLink) {
+  display: flex;
+}
+
+.flexRowContent--rowNavDekstop {
+  gap: 1rem;
+  align-items: center;
+}
+
+.flexRowContent--rowShelfDesktop {
+  width: 80%;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.flexRowContent--rowShelfDesktop :global(.vtex-store-components-3-x-imageElement) {
+  height: 400px;
+}
+

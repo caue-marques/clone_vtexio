@@ -1,9 +1,11 @@
 .sliderLayoutContainer {
   justify-content: center;
 }
+
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
 }
+
 
 .sliderTrackContainer {
   max-width: 1520px;
@@ -12,6 +14,8 @@
 .paginationDotsContainer {
   margin-top: .5rem;
   margin-bottom: .5rem;
+  min-height: 50px;
+  align-items: end;
 }
 
 .layoutContainer--shelf {
@@ -24,4 +28,35 @@
   margin-bottom: 25px;
   padding-left: .5rem;
   padding-right: .5rem;
+}
+
+.imageElement {
+  object-fit: cover;
+}
+
+.sliderLeftArrow,
+.sliderRightArrow {
+  position: absolute;
+  margin-left: -10px;
+  margin-right: -10px;
+  color: gray;
+}
+
+.sliderLayoutContainer .paginationDot--isActive {
+  background-color: #73708b;
+}
+
+/* Não ta pegando (sendo substituido por alguem) */
+.paginationDot {
+  height: 1rem !important;
+  width: 1rem !important;
+  border: 1px solid #73708b;
+  background-color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .sliderTrackContainer--sliderTopHome {
+    width: 100%;
+  }
 }

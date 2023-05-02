@@ -1,20 +1,13 @@
 .notificationBarContainer {
   background-color: #73708B;
-  color: #FBFFFF;
+  color: #FFFFFB;
   font-weight: 700;
   font-size: 12px;
   text-decoration: none;
-  text-align: end;
 }
 
-.notificationBarInner--text1 {
-  justify-content: end;
-  margin-right: 1.2em;
-}
-
-.notificationBarInner--text2 {
-  justify-content: start;
-  margin-right: 1.2em;
+.flexRowContent--main-header-mobile {
+  width: 100%;
 }
 
 .infoCardContainer--info-card-home {
@@ -24,43 +17,55 @@
   padding: 0px;
 }
 
-.newsletter {
-  background-color: #03054e;
-  max-width: 1528px;
-  margin: 0 auto;
-}
 
-.newsletter .container {
-  padding: 60px 10px;
-}
 
 .label {
-  color: #fff;
-  font-size: 26px;
+  color: #73708b;
+  font-size: .8rem;
+  font-weight: 100;
+  line-height: 1.6;
+  letter-spacing: 2.5px;
 }
 
 .inputGroup {
   padding-bottom: 4px;
-  display: flex;
+  display: block;
   color: #fff;
+}
+
+.inputGroup :global(.vtex-input-prefix__group) {
+  border: none;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
   background-color: transparent;
   color: #fff;
   border: none;
+  text-align: center;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
-  color: #fff;
-  font-size: 16px;
+  border: 1px solid #f0f0f0;
+  font-weight: normal;
+  font-size: 14px;
+  color: #384238;
+  letter-spacing: .15em;
+  font-style: italic;
 }
 
 .inputGroup :global(.vtex-button) {
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  margin-right: -24px;
+  width: 100%;
+  height: 33px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 33px;
+  color: #73708b;
+  letter-spacing: .18em;
+  background: transparent;
+  border: 1px solid;
+  text-transform: uppercase;
+  margin-top: 8px;
 }
 
 .buttonContainer {
@@ -76,9 +81,40 @@
   margin: 1rem 0;
 }
 
-@media only screen and (min-width: 640px) {
-  .newsletter .container {
+@media only screen and (min-width: 1024px) {
+  .notificationBarContainer--home-notification-bar {
+    height: 1.3rem;
+  }
+
+  .notificationBarInner--home-notification-bar {
+    min-height: 1.3rem;
+  }
+
+  .logoLink--searchDesktop {
+    padding: 0;
+    margin-top: 1.2rem;
+    margin-right: -4rem;
+    margin-left: 3rem;
+  }
+
+  .logoLink--logoDesktop {
+    margin-top: -.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 630px) and (max-width: 1023px) {
+  /* .newsletter .container {
     padding: 140px;
+  } */
+
+  .logoLink {
+    margin-left: 8rem;
+  }
+
+  .logoLink--searchIconMobile {
+    margin-right: 3rem;
+    margin-left: 0;
   }
 
   .label {
@@ -119,6 +155,112 @@
 
 .productNameContainer {
   color: #3f3f40;
-  font-weight: bold;
-  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.infoCardContainer--entrega {
+  background-color: #000000;
+}
+
+.container--header-mobile :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.logoContainer--searchIconMobile {
+  margin-left: -25px;
+}
+
+.logoContainer {
+  padding: 0px;
+}
+
+.imageElement--image-marca {
+  margin-top: 3rem;
+}
+
+.infoCardTextContainer {
+  width: 100%;
+}
+
+.infoCardContainer--info-card-entrega {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.infoCardContainer--info-card-entregaDesktop {
+  background-image: url("https://merciwithlove.vtexassets.com/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3).png?v=637045447182430000");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.infoCardImage--info-card-entregaDesktop {
+  display: none;
+}
+
+.infoCardTextContainer--info-card-entregaDesktop {
+  width: 30%;
+  margin-left: 15rem;
+  align-items: start;
+  line-height: 1.5rem;
+}
+
+.infoCardSubhead--info-card-entregaDesktop {
+  text-align: start !important;
+}
+
+.infoCardTextContainer--info-card-entregaDesktop :global(.vtex-button) {
+  margin-left: 0 !important;
+  width: 360px;
+} 
+
+.infoCardTextContainer--info-card-entregaDesktop :global(.vtex-store-components-3-x-infoCardCallActionContainer) {
+  text-decoration: none;
+}
+
+.infoCardContainer :global(.vtex-store-components-3-x-infoCardImageContainer) {
+  width: 100%;
+}
+
+.infoCardContainer :global(.vtex-store-components-3-x-infoCardImage) {
+  width: 100%;
+}
+
+.infoCardTextContainer--info-card-entrega {
+  position: absolute;
+  margin-bottom: 130px;
+}
+
+.infoCardCallActionContainer--info-card-entrega {
+  text-decoration: none;
+}
+
+.infoCardHeadline,
+.infoCardSubhead {
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.infoCardSubhead {
+  width: 95%;
+  text-align: center;
+}
+
+.infoCardTextContainer :global(.vtex-button) {
+  display: block;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color: transparent;
+  font-weight: normal;
+  border-radius: 0;
+}
+
+.infoCardCallActionContainer {
+  width: 100%;
 }

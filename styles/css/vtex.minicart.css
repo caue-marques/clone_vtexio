@@ -1,0 +1,13 @@
+.minicartContainer {
+    margin-right: -5px;
+}
+
+.minicartContainer :global(.vtex-button__label ) {
+    display: none;
+}
+
+.minicartContainer :global(.vtex-button ) {
+    background-image: url("https://merciwithlove.vteximg.com.br/arquivos/ico-shopping-cart.png");
+    background-repeat: no-repeat;
+    width: 2.5rem;
+}

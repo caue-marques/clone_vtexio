@@ -82,3 +82,15 @@
     transition: none;
   }
 }
+
+.headerRowContentContainer--header-mobile {
+  padding: 0;
+}
+
+.headerRowBackground--sticky-header {
+  margin-bottom: 1.3em;
+}
+
+.headerRowContentContainer--sticky-header {
+  margin-top: .8rem;
+}
