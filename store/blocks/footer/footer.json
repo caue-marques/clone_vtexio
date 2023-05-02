@@ -8,23 +8,150 @@
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#2-footer-mobile",
+      "flex-layout.row#3-footer-mobile"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "flex-layout.col#col-footer-1-desktop",
+      "flex-layout.col#col-footer-2-desktop",
+      "flex-layout.col#col-footer-3-desktop",
+      "flex-layout.col#col-footer-4-desktop",
+      "flex-layout.col#col-footer-5-desktop"
     ],
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "footer-1-desktop"
+    }
+  },
+  "flex-layout.col#col-footer-1-desktop": {
+    "children": [
+      "rich-text#atendimento-desktop",
+      "flex-layout.row#imagens-sociais-desktop"
+    ]
+  },
+  "rich-text#atendimento-desktop": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nAtendimento\n\nTelefone: +55 31 3517-8129\nWhatsapp: +55 31 99169-7664\nEmail: contato@merciwithlove.com.br",
+      "blockClass": "footer-desktop-sociais"
+    }
+  },
+  "flex-layout.row#imagens-sociais-desktop": {
+    "children": [
+      "flex-layout.row#rich-text-sociais",
+      "flex-layout.row#images-social-desktop"
+    ],
+    "props": {
+      "blockClass": "imagens-sociais-desktop"
+    }
+  },
+  "flex-layout.row#rich-text-sociais": {
+    "children": [
+      "rich-text#social-media-desktop"
+    ]
+  },
+  "flex-layout.row#images-social-desktop": {
+    "children": [
+      "image#instagram-desktop",
+      "image#facebook-desktop",
+      "image#youtube-desktop",
+      "image#pinterest-desktop"
+    ],
+    "props": {
+      "blockClass": "images-social-desktop"
+    }
+  },
+  "rich-text#social-media-desktop": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nRedes Sociais",
+      "blockClass": "footer-desktop"
+    }
+  },
+
+  "image#instagram-desktop": {
+    "props": {
+      "src": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-round-line-icon.png",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "image#facebook-desktop": {
+    "props": {
+      "src": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-line-icon.png",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "image#youtube-desktop": {
+    "props": {
+      "src": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-round-icon.png",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "image#pinterest-desktop": {
+    "props": {
+      "src": "https://cdn-icons-png.flaticon.com/512/80/80648.png",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "flex-layout.col#col-footer-2-desktop": {
+    "children": [
+      "rich-text#institucional-desktop"
+    ],
+    "props": {
+      "blockClass": "col-institucional"
+    }
+  },
+  "rich-text#institucional-desktop": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nInstitucional\n\nQuem Somos\nClube Merci\nFale Conosco",
+      "blockClass": "footer-desktop"
+    }
+  },
+  "flex-layout.col#col-footer-3-desktop": {
+    "children": [
+      "rich-text#suporte"
+    ]
+  },
+  "rich-text#suporte": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nAjuda e Suporte\n\nTrocas e Devoluções\nPolitica de privacidade\nPolitica de Entrega",
+      "blockClass": "footer-desktop"
+    }
+  },
+  "flex-layout.col#col-footer-4-desktop": {
+    "children": [
+      "rich-text#atelie"
+    ],
+    "props": {
+      "blockClass": "col-atelie"
+    }
+  },
+  "rich-text#atelie": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nNosso Ateliê BH\n\nRua Ministro Orozimbo Nonato nº 102, sala 1104, Nova Lima/MG\nCEP: 34006-053\nSegunda-Sexta: 10.00 - 19.00\nSábado: 10.00 - 14.00\nDomingo: Fechado",
+      "blockClass": "footer-desktop"
+    }
+  },
+  "flex-layout.col#col-footer-5-desktop": {
+    "children": [
+      "rich-text#merci"
+    ]
+  },
+  "rich-text#merci": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nEnxoval Merci\n\nConheça mais formas de personalizar o seu enxoval Merci",
+      "blockClass": "footer-desktop"
     }
   },
   "social-networks": {
@@ -49,29 +176,9 @@
       ]
     }
   },
-  "flex-layout.row#footer-2-desktop": {
-    "children": [
-      "accepted-payment-methods"
-    ],
-    "props": {
-      "blockClass": "payment-methods"
-    }
-  },
   "accepted-payment-methods": {
     "props": {
-      "paymentMethods": [
-        "Visa",
-        "MasterCard",
-        "Diners Club"
-      ]
-    }
-  },
-  "flex-layout.row#footer-3-desktop": {
-    "children": [
-      "rich-text#footer"
-    ],
-    "props": {
-      "blockClass": "credits"
+      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
     }
   },
   "rich-text#footer": {
@@ -156,7 +263,9 @@
     }
   },
   "flex-layout.row#participantes": {
-    "children":["rich-text#participantes"]
+    "children": [
+      "rich-text#participantes"
+    ]
   },
   "rich-text#participantes": {
     "props": {

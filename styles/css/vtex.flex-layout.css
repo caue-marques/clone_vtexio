@@ -3,6 +3,15 @@
   padding: 0 0.5rem;
 }
 
+@media screen and (min-width: 1024px) {
+
+  .flexRow--vitrine {
+    width: 75% !important;
+    margin: 2rem auto;
+  }
+}
+
+
 @media screen and (min-width: 40em) {
 
   .flexRowContent--menu-link,
@@ -289,3 +298,103 @@
   height: 400px;
 }
 
+.flexRow--footer-1-desktop {
+  background-color: #73708b;
+  color: white
+}
+
+.flexRowContent--footer-1-desktop {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flexRowContent--imagens-sociais-desktop {
+  display: block;
+}
+
+.flexRowContent--imagens-sociais-desktop .stretchChildrenWidth {
+  width: 100% !important;
+  margin: 0;
+}
+
+.flexColChild--col-atelie {
+  width: 85%;
+}
+
+.flexColChild--col-institucional {
+  margin-left: 50px;
+}
+
+.flexRow--newsletter :global(.vtex-store-newsletter-1-x-emailInputContainer),
+.flexRow--newsletter :global(.vtex-store-newsletter-1-x-nameInputContainer) {
+  margin: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .flexRowContent--newsletter :global(.vtex-button__label) {
+    border: none;
+    width: 2%;
+    margin-right: 0;
+    background-image: url(https://merciwithlove.vteximg.com.br/arquivos/send-button.png);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    text-indent: -213213px;
+    height: 2.4rem;
+  }
+
+  .flexRow--newsletter :global(.vtex-store-newsletter-1-x-emailInputContainer),
+  .flexRow--newsletter :global(.vtex-store-newsletter-1-x-nameInputContainer) {
+    margin: auto;
+    opacity: 0.5;
+  }
+
+  .flexRowContent--newsletter :global(.vtex-styleguide-9-x-input) {
+    font-size: .8rem;
+  }
+
+  .flexRowContent--newsletter :global(.vtex-styleguide-9-x-input)::placeholder {
+    text-align: left;
+  }
+
+  .flexRowContent--newsletter :global(.vtex-input-prefix__group) {
+    border-bottom: 1px solid gray;
+    width: 85%;
+  }
+
+  .flexRowContent--newsletter :global(.vtex-rich-text-0-x-paragraph--sobreTexto) {
+    letter-spacing: .3rem;
+    font-size: 1.3rem;
+  }
+
+  .flexRowContent--newsletter :global(.vtex-rich-text-0-x-container--sobreTexto) {
+    width: 80%;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+  }
+
+  .flexRowContent--newsletter :global(.vtex-button) {
+    border: none;
+    margin-top: 15px;
+    margin-left: -40px;
+  }
+
+  .flexRowContent--newsletter :global(.vtex-store-newsletter-1-x-newsletterForm) {
+    display: flex;
+  }
+
+  .flexRowContent--sobre-marca :global(.vtex-rich-text-0-x-wrapper--sobreTexto) {
+    margin-bottom: 65px;
+  }
+
+  .flexRow--images-social-desktop :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 25% !important;
+  }
+
+  .flexRowContent--images-social-desktop {
+    justify-content: start;
+    width: 55%;
+    gap: 0.1rem;
+  }
+}

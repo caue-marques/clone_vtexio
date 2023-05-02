@@ -210,7 +210,10 @@
   "flex-layout.row#vitrine": {
     "children": [
       "list-context.product-list#vitrine"
-    ]
+    ],
+    "props": {
+      "blockClass": "vitrine"
+    }
   },
   "list-context.product-list#vitrine": {
     "blocks": [
@@ -335,8 +338,15 @@
       "blockClass": "newsletter"
     }
   },
+  "rich-text#newsletter-title": {
+    "props": {
+      "text": "\n![](https://merciwithlove.vteximg.com.br/arquivos/ico-mail.png?v=636845290506470000) NEWSLETTER",
+      "blockClass": "sobreTexto"
+    }
+  },
   "newsletter-form": {
     "children": [
+      "rich-text#newsletter-title",
       "newsletter-input-email",
       "newsletter-input-name",
       "newsletter-submit"

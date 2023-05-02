@@ -189,9 +189,27 @@
   flex-direction: column-reverse;
 }
 
+@media screen and (min-width: 1024px)  {
+  .infoCardTextContainer--info-card-entregaDesktop {
+    width: 50% !important;
+    margin-left: 10rem !important;
+  }
+
+  .infoCardHeadline--info-card-entregaDesktop, .infoCardSubhead--info-card-entregaDesktop {
+    font-weight: 200 !important;
+    font-size: 1.15rem !important;
+  }
+
+  .infoCardSubhead--info-card-entregaDesktop {
+    width: 80% !important;
+  }
+  
+}
+
 .infoCardContainer--info-card-entregaDesktop {
   background-image: url("https://merciwithlove.vtexassets.com/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3).png?v=637045447182430000");
   background-repeat: no-repeat;
+  background-position: center center;
   height: 500px;
 }
 
@@ -264,3 +282,9 @@
 .infoCardCallActionContainer {
   width: 100%;
 }
+
+.imageElement--image-social-desktop {
+  width: 30px;
+  height: 30px;
+}
+

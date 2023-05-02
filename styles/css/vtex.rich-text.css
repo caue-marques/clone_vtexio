@@ -114,6 +114,10 @@
   letter-spacing: 0.03em;
 }
 
+.paragraph--rowDestaque {
+  font-size: 1.6rem;
+}
+
 .wrapper--participantes {
   width: 100%;
   display: flex;
@@ -146,6 +150,10 @@
   padding: 0;
 }
 
+.container--sobreTexto {
+  justify-content: center;
+}
+
 .paragraph--sobreTexto {
   text-align: center;
   color: #73708b;
@@ -174,4 +182,32 @@
 
 .container--text-header-desktop-pronta {
   font-size: .9rem;
+}
+
+.container--footer-desktop {
+  color: white;
+}
+
+.container--footer-desktop-sociais :global(.vtex-rich-text-0-x-link) {
+  color: white;
+  text-decoration: none;
+}
+
+.container--footer-desktop :global(.vtex-rich-text-0-x-wrapper) {
+  font-size: .95rem;
+  line-height: 1.1rem;
+}
+
+.container--footer-desktop-sociais {
+  color: white;
+  font-size: .9rem;
+  width: 125%;
+}
+
+.paragraph--footer-desktop-sociais, .paragraph--footer-desktop {
+  line-height: 1.8rem;
+}
+
+.paragraph--sobreTitle {
+  margin: 0;
 }
