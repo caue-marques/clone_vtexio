@@ -112,7 +112,8 @@
       "flex-layout.col#col7-desktop"
     ],
     "props": {
-      "blockClass": "rowNavDekstop"
+      "blockClass": "rowNavDekstop",
+      "colSizing": "auto"
     }
   },
   "flex-layout.col#col1-desktop": {

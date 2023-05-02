@@ -286,6 +286,7 @@
 .flexRowContent--rowNavDekstop {
   gap: 1rem;
   align-items: center;
+  margin-right: 40px;
 }
 
 .flexRowContent--rowShelfDesktop {
