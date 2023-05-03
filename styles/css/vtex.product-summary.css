@@ -45,24 +45,33 @@
   border-radius: 0.25rem;
 }
 
-.element :global(.vtex-button) {
+/* .element :global(.vtex-button) {
   display: none;
-}
+} */
 
 @media only screen and (min-width: 1024px) {
 
   .element:hover {
-    border: 1px solid #000;
-    border-radius: 0;
+    border-width: 1px;
   }
 
   .element {
     height: 470px;
     padding: 50px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .1s ease-in-out;
+    border: 0px solid #000;
+  }
+
+  .element:hover :global(.vtex-product-summary-2-x-imageNormal) {
+    opacity: 0.5;
+    transition: all .2s ease-in;
   }
 
   .element:hover :global(.vtex-button) {
     display: block;
+    opacity: 1;
+    transition: all .2s ease-in;
   }
 
   .element :global(.vtex-button) {
@@ -72,7 +81,7 @@
     border: none;
     border-radius: 0;
     margin-top: 3rem;
-
+    opacity: 0;
   }
 }
 
