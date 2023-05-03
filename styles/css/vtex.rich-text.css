@@ -101,7 +101,7 @@
 .container--rowPresente {
   justify-content: center;
   color: #73708b;
-  font-weight: 700;
+  font-family: Montserrat Bold, Arial, sans-serif;
   margin: 0.3rem 0;
   letter-spacing: 0.03em;
 }
@@ -109,7 +109,7 @@
 .container--rowDestaque {
   justify-content: center;
   color: #73708b;
-  font-weight: 700;
+  font-family: Montserrat Bold, Arial, sans-serif;
   margin: 0.3rem 0;
   letter-spacing: 0.03em;
 }
@@ -178,6 +178,7 @@
 
 .paragraph--text-header-desktop {
   font-size: .9rem;
+  font-family: Montserrat Medium, Arial, sans-serif;
 }
 
 .container--text-header-desktop-pronta {
@@ -194,13 +195,14 @@
 }
 
 .container--footer-desktop :global(.vtex-rich-text-0-x-wrapper) {
-  font-size: .95rem;
+  font-size: .85rem;
+  font-family: Montserrat, Arial, sans-serif;
   line-height: 1.1rem;
 }
 
 .container--footer-desktop-sociais {
   color: white;
-  font-size: .9rem;
+  font-size: .85rem;
   width: 125%;
 }
 
@@ -210,4 +212,9 @@
 
 .paragraph--sobreTitle {
   margin: 0;
+}
+
+.paragraph--footer {
+  font-size: .85rem;
+  font-family: Montserrat, Arial, sans-serif;
 }

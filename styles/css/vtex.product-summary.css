@@ -43,3 +43,32 @@
 .image {
   border-radius: 0.25rem;
 }
+
+.element:hover {
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
+.element {
+  height: 470px;
+  padding: 50px;
+}
+
+.element:hover :global(.vtex-button) {
+  display: block;
+}
+
+.element :global(.vtex-button) {
+  display: none; 
+  background-color: #ffc644;
+  width: 100%;
+  min-height: 45px;
+  border: none;
+  border-radius: 0;
+  margin-top: 3rem;
+
+}
+
+.element :global(.vtex-button__label) {
+  font-family: Montserrat Bold, Arial, sans-serif;
+}

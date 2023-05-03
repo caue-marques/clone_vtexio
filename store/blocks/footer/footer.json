@@ -176,9 +176,43 @@
       ]
     }
   },
-  "accepted-payment-methods": {
+  "flex-layout.row#imagens-payment-methods": {
+    "children": [
+      "image#visa",
+      "image#master",
+      "image#elo",
+      "image#dinners",
+      "image#americaExpress"
+    ],
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "colSizing": "auto",
+      "blockClass": "imagens-payment-methods"
+    }
+  },
+  "image#visa": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/icone-visa.png?v=636845296112970000"
+    }
+  },
+  "image#master": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/icone-master.png?v=636845295859630000",
+      "blockClass": "image-payment-master"
+    }
+  },
+  "image#elo": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/icone-elo.png?v=636845295027170000"
+    }
+  },
+  "image#dinners": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/icone-diners.png?v=636845292218770000"
+    }
+  },
+  "image#americaExpress": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/icone-american.png?v=636845290941700000"
     }
   },
   "rich-text#footer": {
@@ -206,7 +240,7 @@
   },
   "flex-layout.col#footer-1-mobile": {
     "children": [
-      "accepted-payment-methods",
+      "flex-layout.row#imagens-payment-methods",
       "rich-text#footer-mobile-direitos",
       "rich-text#footer-mobile-endereco",
       "rich-text#footer-mobile-copy"

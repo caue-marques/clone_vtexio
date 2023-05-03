@@ -235,12 +235,7 @@
       "showPaginationDots": "always"
     }
   },
-  "product-summary.shelf": {
-    "children": [
-      "product-summary-name",
-      "product-summary-price"
-    ]
-  },
+  
   "flex-layout.row#underDestaque": {
     "children": [
       "image#casamento"
@@ -269,11 +264,6 @@
       "isFullModeStyle": false,
       "textPosition": "left",
       "imageUrl": "https://merciwithlove.vteximg.com.br/arquivos/ids/176799/Merci-With-Love-Ready-to-Go-04.png?v=637051881238100000",
-      "headline": "Merci ready to go",
-      "subhead": "Conheça os produtos que podem ser personalizados em 3 dias úteis e enviados para todo brasil.",
-      "callToActionText": "IR PARA PRONTA ENTREGA",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center",
       "blockClass": "info-card-entrega"
     }
   },

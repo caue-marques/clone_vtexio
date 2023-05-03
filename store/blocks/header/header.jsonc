@@ -183,7 +183,7 @@
   "rich-text#pronta-entrega": {
     "props": {
       "text": "PRONTA ENTREGA",
-      "blockClass": "text-header-desktop-pronta"
+      "blockClass": "text-header-desktop"
     }
   },
 

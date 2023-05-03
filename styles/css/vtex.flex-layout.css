@@ -399,3 +399,15 @@
     gap: 0.1rem;
   }
 }
+
+.flexRowContent--imagens-payment-methods {
+  gap: 2rem;
+  height: 1.3rem;
+  margin: 35px auto;
+  display: flex;
+  align-items: center;
+}
+
+.flexRowContent--vitrine :global(.vtex-slider-layout-0-x-sliderTrackContainer) {
+  margin-bottom: 100px;
+}

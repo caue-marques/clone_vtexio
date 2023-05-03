@@ -200,12 +200,17 @@
   .infoCardHeadline--info-card-entregaDesktop, .infoCardSubhead--info-card-entregaDesktop {
     font-weight: 200 !important;
     font-size: 1.15rem !important;
+    font-family: Montserrat, Arial, sans-serif;
   }
 
   .infoCardSubhead--info-card-entregaDesktop {
     width: 80% !important;
   }
   
+  .logoContainer--logoDesktop {
+    margin-bottom: 5px;
+  }
+
 }
 
 .infoCardContainer--info-card-entregaDesktop {
@@ -248,8 +253,7 @@
 }
 
 .infoCardTextContainer--info-card-entrega {
-  position: absolute;
-  margin-bottom: 130px;
+  display: none;
 }
 
 .infoCardCallActionContainer--info-card-entrega {
@@ -290,3 +294,11 @@
   height: 30px;
 }
 
+.imageElement--image-payment-master {
+  width: 32px;
+  height: 26px;
+}
+
+.infoCardTextContainer--info-card-entrega {
+  
+}
