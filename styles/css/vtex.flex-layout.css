@@ -6,7 +6,7 @@
 @media screen and (min-width: 1024px) {
 
   .flexRow--vitrine {
-    width: 75% !important;
+    width: 60% !important;
     margin: 2rem auto;
   }
 }

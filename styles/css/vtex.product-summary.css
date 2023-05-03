@@ -45,9 +45,9 @@
   border-radius: 0.25rem;
 }
 
-/* .element :global(.vtex-button) {
-  display: none;
-} */
+.element :global(.vtex-button) {
+  opacity: 0;
+}
 
 @media only screen and (min-width: 1024px) {
 
