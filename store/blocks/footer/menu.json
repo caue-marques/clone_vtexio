@@ -225,7 +225,7 @@
       "menu-item#nossoAtelie-mobile",
       "menu-item#enxoval-mobile",
       "rich-text#redes-sociais-mobile",
-      "social-networks"
+      "flex-layout.row#social-networks-mobile"
     ]
   },
 

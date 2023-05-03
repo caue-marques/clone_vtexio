@@ -74,25 +74,25 @@
 
   "image#instagram-desktop": {
     "props": {
-      "src": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-round-line-icon.png",
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-insta.png?v=636848180190730000",
       "blockClass": "image-social-desktop"
     }
   },
   "image#facebook-desktop": {
     "props": {
-      "src": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-line-icon.png",
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-face.png?v=636848180190730000",
       "blockClass": "image-social-desktop"
     }
   },
   "image#youtube-desktop": {
     "props": {
-      "src": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-round-icon.png",
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-twitter.png?v=636848180282100000",
       "blockClass": "image-social-desktop"
     }
   },
   "image#pinterest-desktop": {
     "props": {
-      "src": "https://cdn-icons-png.flaticon.com/512/80/80648.png",
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-whats.png?v=636848180190730000",
       "blockClass": "image-social-desktop"
     }
   },
@@ -154,26 +154,40 @@
       "blockClass": "footer-desktop"
     }
   },
-  "social-networks": {
+  "flex-layout.row#social-networks-mobile": {
+    "children": [
+      "image#insta-mobile",
+      "image#facebook-mobile",
+      "image#whats-mobile",
+      "image#twitter-mobile"
+    ],
     "props": {
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-      ]
+      "blockClass": "social-networks-mobile",
+      "colSizing": "auto"
+    }
+  },
+  "image#insta-mobile": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-insta.png?v=636848180190730000",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "image#facebook-mobile": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-face.png?v=636848180190730000",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "image#whats-mobile": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-whats.png?v=636848180364900000",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "image#twitter-mobile": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-twitter.png?v=636848180282100000",
+      "blockClass": "image-social-desktop"
     }
   },
   "flex-layout.row#imagens-payment-methods": {

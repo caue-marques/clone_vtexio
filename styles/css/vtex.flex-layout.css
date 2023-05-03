@@ -161,7 +161,7 @@
 }
 
 .flexRow--footer-mobile {
-  background-color: #413f4e;
+  background-color: #73708b;
 }
 
 .flexRow--logo-texto {
@@ -410,4 +410,15 @@
 
 .flexRowContent--vitrine :global(.vtex-slider-layout-0-x-sliderTrackContainer) {
   margin-bottom: 100px;
+}
+
+.flexRowContent--social-networks-mobile {
+  flex-direction: row;
+  display: flex;
+  gap: .8rem;
+}
+
+.flexRow--social-networks-mobile {
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
