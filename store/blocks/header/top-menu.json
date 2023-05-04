@@ -270,14 +270,15 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "Carteira"
+      "text": "Carteira",
+      "blockClass": "text-img-obj1-item-01-nv2"
     }
   },
 
   "flex-layout.col#obj2-item-01-nv2": {
     "children": [
       "image#img-obj2-item-01-nv2",
-      "rich-text#text-img-obj1-item-01-nv2"
+      "rich-text#text-img-obj2-item-01-nv2"
     ],
     "props": {
       "blockClass": "col-obj1-item-01-nv2"
@@ -291,7 +292,8 @@
   },
   "rich-text#text-img-obj2-item-01-nv2": {
     "props": {
-      "text": "Passaporte"
+      "text": "Passaporte",
+      "blockClass": "text-img-obj1-item-01-nv2"
     }
   },
 
@@ -312,7 +314,8 @@
   },
   "rich-text#text-img-obj3-item-01-nv2": {
     "props": {
-      "text": "Porta Jóias"
+      "text": "Porta Jóias",
+      "blockClass": "text-img-obj1-item-01-nv2"
     }
   },
 
@@ -333,7 +336,8 @@
   },
   "rich-text#text-img-obj4-item-01-nv2": {
     "props": {
-      "text": "Tag de malas"
+      "text": "Tag de malas",
+      "blockClass": "text-img-obj1-item-01-nv2"
     }
   },
 
@@ -354,7 +358,8 @@
   },
   "rich-text#text-img-obj5-item-01-nv2": {
     "props": {
-      "text": "Necessaires"
+      "text": "Necessaires",
+      "blockClass": "text-img-obj1-item-01-nv2"
     }
   },
 
