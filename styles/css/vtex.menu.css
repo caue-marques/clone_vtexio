@@ -19,7 +19,7 @@
     padding: 0.4rem;
 }
 
-@media only screen and (min-width: 640px) { 
+@media only screen and (min-width: 640px) {
     .styledLinkContent--footer-options {
         width: 40%;
         margin: 0 auto;
@@ -54,4 +54,8 @@
 .submenu--menu-nv2 {
     width: 1200px;
     height: 450px;
+}
+
+.submenuWrapper--menu-nv2 {
+    box-shadow: 8px 4px 8px 4px rgba(0, 0, 0, 0.2), 1px 6px 20px 6px rgba(0, 0, 0, 0.19);
 }
