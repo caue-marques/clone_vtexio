@@ -195,14 +195,14 @@
 }
 
 .container--footer-desktop :global(.vtex-rich-text-0-x-wrapper) {
-  font-size: .85rem;
+  font-size: .89rem;
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1.1rem;
 }
 
 .container--footer-desktop-sociais {
   color: white;
-  font-size: .85rem;
+  font-size: .89rem;
   width: 125%;
 }
 
@@ -217,4 +217,14 @@
 .paragraph--footer {
   font-size: .85rem;
   font-family: Montserrat, Arial, sans-serif;
+}
+
+.wrapper--link-item-01-nv2 :global(.vtex-rich-text-0-x-link) {
+  color: #404040;
+}
+
+.paragraph--title-item-01-nv2 {
+  font-family: "Montserrat Medium";
+  font-size: 1.2rem;
+  color: #73708b
 }

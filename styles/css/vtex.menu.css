@@ -2,11 +2,9 @@
     letter-spacing: 0.08em;
     flex-direction: row-reverse;
     padding: 1.15em 0;
-    color: #404040;
-    font-size: 0.8em;
-    font-weight: 500;
-    border-bottom: 0.05em solid #D5D6D2;
-    width: 80%;
+    color: inherit;
+    font-size: .9rem;
+    font-family: Montserrat Semibold, Arial, sans-serif;
     justify-content: left;
 }
 
@@ -51,4 +49,9 @@
 .styledLinkIcon {
     position: absolute;
     right: 0;
+}
+
+.submenu--menu-nv2 {
+    width: 1200px;
+    height: 450px;
 }

@@ -98,7 +98,7 @@
       "verticalAlign": "middle"
     },
     "children": [
-      "flex-layout.row#menu-desktop"
+      "flex-layout.row#menu"
     ]
   },
   "flex-layout.row#menu-desktop": {

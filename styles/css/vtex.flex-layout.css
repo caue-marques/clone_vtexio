@@ -6,11 +6,14 @@
 @media screen and (min-width: 1024px) {
 
   .flexRow--vitrine {
-    width: 60% !important;
+    width: 80% !important;
     margin: 2rem auto;
   }
 }
 
+.flexRow--vitrine :global(.vtex-store-components-3-x-container) {
+  width: 85%;
+}
 
 @media screen and (min-width: 40em) {
 
@@ -421,4 +424,36 @@
 .flexRow--social-networks-mobile {
   margin-top: 5px;
   margin-bottom: 30px;
+}
+
+.flexCol--col-imagens-item-01-nv2  {
+  height: 100%;
+}
+
+.flexColChild--col-imagens-item-01-nv2 :global(.vtex-store-components-3-x-imageElement) {
+  width: 285px;
+  height: 191px;
+  margin-bottom: 20px;
+}
+
+.flexColChild--conteudo-item-01-nv2 {
+  height: auto !important;
+  width: 130%;
+  margin-left: 25px;
+}
+
+.flexCol--conteudo-item-01-nv2 {
+  gap: 3rem;
+}
+
+.flexRow--row-geral-dropdown {
+  justify-content: start;
+}
+
+.flexCol--col-obj1-item-01-nv2 {
+  align-items: center;
+}
+
+.flexRowContent--row-objetos-item-01-nv2 {
+  justify-content: space-between;
 }
