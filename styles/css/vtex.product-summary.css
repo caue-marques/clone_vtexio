@@ -1,4 +1,5 @@
-.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround,
+.skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
   border-radius: 50%;
 }
 
@@ -31,8 +32,8 @@
 }
 
 .container {
-  text-align: start;
-  margin-left: 50px;
+  text-align: center;
+  width: 80%;
 }
 
 .imageContainer {
@@ -42,4 +43,52 @@
 
 .image {
   border-radius: 0.25rem;
+}
+
+.element :global(.vtex-button) {
+  opacity: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .containerNormal  {
+    max-width: 400px !important;
+  }
+
+  .element:hover {
+    border-width: 1px;
+  }
+
+  .element {
+    height: 470px;
+    padding: 50px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .1s ease-in-out;
+    border: 0px solid #000;
+  }
+
+  .element:hover :global(.vtex-product-summary-2-x-imageNormal) {
+    opacity: 0.5;
+    transition: all .2s ease-in;
+  }
+
+  .element:hover :global(.vtex-button) {
+    display: block;
+    opacity: 1;
+    transition: all .2s ease-in;
+  }
+
+  .element :global(.vtex-button) {
+    background-color: #ffc644;
+    width: 100%;
+    min-height: 45px;
+    border: none;
+    border-radius: 0;
+    margin-top: 3rem;
+    opacity: 0;
+  }
+}
+
+.element :global(.vtex-button__label) {
+  font-family: Montserrat Bold, Arial, sans-serif;
 }

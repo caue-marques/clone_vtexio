@@ -1,69 +1,232 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#2-footer-mobile",
+      "flex-layout.row#3-footer-mobile"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "flex-layout.col#col-footer-1-desktop",
+      "flex-layout.col#col-footer-2-desktop",
+      "flex-layout.col#col-footer-3-desktop",
+      "flex-layout.col#col-footer-4-desktop",
+      "flex-layout.col#col-footer-5-desktop"
     ],
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "footer-1-desktop"
+    }
+  },
+  "flex-layout.col#col-footer-1-desktop": {
+    "children": [
+      "rich-text#atendimento-desktop",
+      "flex-layout.row#imagens-sociais-desktop"
+    ]
+  },
+  "rich-text#atendimento-desktop": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nAtendimento\n\nTelefone: +55 31 3517-8129\nWhatsapp: +55 31 99169-7664\nEmail: contato@merciwithlove.com.br",
+      "blockClass": "footer-desktop-sociais"
+    }
+  },
+  "flex-layout.row#imagens-sociais-desktop": {
+    "children": [
+      "flex-layout.row#rich-text-sociais",
+      "flex-layout.row#images-social-desktop"
+    ],
+    "props": {
+      "blockClass": "imagens-sociais-desktop"
+    }
+  },
+  "flex-layout.row#rich-text-sociais": {
+    "children": [
+      "rich-text#social-media-desktop"
+    ]
+  },
+  "flex-layout.row#images-social-desktop": {
+    "children": [
+      "image#instagram-desktop",
+      "image#facebook-desktop",
+      "image#youtube-desktop",
+      "image#pinterest-desktop"
+    ],
+    "props": {
+      "blockClass": "images-social-desktop"
+    }
+  },
+  "rich-text#social-media-desktop": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nRedes Sociais",
+      "blockClass": "footer-desktop"
     }
   },
 
-  "social-networks": {
+  "image#instagram-desktop": {
     "props": {
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-      ]
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-insta.png?v=636848180190730000",
+      "blockClass": "image-social-desktop"
     }
   },
-
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
+  "image#facebook-desktop": {
     "props": {
-      "blockClass": "payment-methods"
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-face.png?v=636848180190730000",
+      "blockClass": "image-social-desktop"
     }
   },
-  "accepted-payment-methods": {
+  "image#youtube-desktop": {
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-twitter.png?v=636848180282100000",
+      "blockClass": "image-social-desktop"
     }
   },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
+  "image#pinterest-desktop": {
     "props": {
-      "blockClass": "credits"
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-whats.png?v=636848180190730000",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "flex-layout.col#col-footer-2-desktop": {
+    "children": [
+      "rich-text#institucional-desktop"
+    ],
+    "props": {
+      "blockClass": "col-institucional"
+    }
+  },
+  "rich-text#institucional-desktop": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nInstitucional\n\nQuem Somos\nClube Merci\nFale Conosco",
+      "blockClass": "footer-desktop"
+    }
+  },
+  "flex-layout.col#col-footer-3-desktop": {
+    "children": [
+      "rich-text#suporte"
+    ]
+  },
+  "rich-text#suporte": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nAjuda e Suporte\n\nTrocas e Devoluções\nPolitica de privacidade\nPolitica de Entrega",
+      "blockClass": "footer-desktop"
+    }
+  },
+  "flex-layout.col#col-footer-4-desktop": {
+    "children": [
+      "rich-text#atelie"
+    ],
+    "props": {
+      "blockClass": "col-atelie"
+    }
+  },
+  "rich-text#atelie": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nNosso Ateliê BH\n\nRua Ministro Orozimbo Nonato nº 102, sala 1104, Nova Lima/MG\nCEP: 34006-053\nSegunda-Sexta: 10.00 - 19.00\nSábado: 10.00 - 14.00\nDomingo: Fechado",
+      "blockClass": "footer-desktop"
+    }
+  },
+  "flex-layout.col#col-footer-5-desktop": {
+    "children": [
+      "rich-text#merci"
+    ]
+  },
+  "rich-text#merci": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nEnxoval Merci\n\nConheça mais formas de personalizar o seu enxoval Merci",
+      "blockClass": "footer-desktop"
+    }
+  },
+  "flex-layout.row#social-networks-mobile": {
+    "children": [
+      "image#insta-mobile",
+      "image#facebook-mobile",
+      "image#whats-mobile",
+      "image#twitter-mobile"
+    ],
+    "props": {
+      "blockClass": "social-networks-mobile",
+      "colSizing": "auto"
+    }
+  },
+  "image#insta-mobile": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-insta.png?v=636848180190730000",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "image#facebook-mobile": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-face.png?v=636848180190730000",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "image#whats-mobile": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-whats.png?v=636848180364900000",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "image#twitter-mobile": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/ico-footer-twitter.png?v=636848180282100000",
+      "blockClass": "image-social-desktop"
+    }
+  },
+  "flex-layout.row#imagens-payment-methods": {
+    "children": [
+      "image#visa",
+      "image#master",
+      "image#elo",
+      "image#dinners",
+      "image#americaExpress"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "imagens-payment-methods"
+    }
+  },
+  "image#visa": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/icone-visa.png?v=636845296112970000"
+    }
+  },
+  "image#master": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/icone-master.png?v=636845295859630000",
+      "blockClass": "image-payment-master"
+    }
+  },
+  "image#elo": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/icone-elo.png?v=636845295027170000"
+    }
+  },
+  "image#dinners": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/icone-diners.png?v=636845292218770000"
+    }
+  },
+  "image#americaExpress": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/icone-american.png?v=636845290941700000"
     }
   },
   "rich-text#footer": {
@@ -72,15 +235,17 @@
       "blockClass": "footer"
     }
   },
-
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
+      "flex-layout.row#2-footer-mobile",
+      "flex-layout.row#3-footer-mobile"
     ]
   },
   "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
+    "children": [
+      "flex-layout.col#footer-1-mobile"
+    ],
     "props": {
       "blockClass": "payment-methods",
       "paddingTop": 4,
@@ -89,9 +254,10 @@
   },
   "flex-layout.col#footer-1-mobile": {
     "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
+      "flex-layout.row#imagens-payment-methods",
+      "rich-text#footer-mobile-direitos",
+      "rich-text#footer-mobile-endereco",
+      "rich-text#footer-mobile-copy"
     ],
     "props": {
       "blockClass": "payment-methods",
@@ -100,17 +266,59 @@
       "rowGap": 4
     }
   },
+  "flex-layout.row#3-footer-mobile": {
+    "children": [
+      "flex-layout.row#participantes"
+    ],
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
   "flex-layout.row#1-footer-mobile": {
     "props": {
       "paddingTop": 4,
-      "paddingBottom": 4
+      "paddingBottom": 4,
+      "blockClass": "footer-mobile"
     },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile"
+    ]
   },
-  "rich-text#footer-mobile": {
+  "rich-text#footer-mobile-direitos": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "\n© 2016 , Merci with Love - Todos os direitos reservados\n",
       "blockClass": "footer"
+    }
+  },
+  "rich-text#footer-mobile-endereco": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "\nRua Ministro Orozimbo Nonato nº 102, sala 1104 - Nova Lima/MG | CEP: 34006-053 | CNPJ: 22.663.945/0001-26 | Telefone: (31) 3517-8129\n",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer-mobile-copy": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "\nTodas as marcas e suas imagens são de propriedade de seus respectivos donos. É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.\n",
+      "blockClass": "footer"
+    }
+  },
+  "flex-layout.row#participantes": {
+    "children": [
+      "rich-text#participantes"
+    ]
+  },
+  "rich-text#participantes": {
+    "props": {
+      "text": "![](https://merciwithlove.vteximg.com.br/arquivos/logo-b2u.png?v=637106441517970000)\n![](https://merciwithlove.vteximg.com.br/arquivos/logo-acct.png?v=636849882457200000)\n![](https://merciwithlove.vteximg.com.br/arquivos/logo-vtex-footer.png?v=636845298025900000)",
+      "blockClass": "participantes"
     }
   }
 }

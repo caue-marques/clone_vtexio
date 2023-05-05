@@ -22,7 +22,8 @@
         "noFollow": false,
         "tagTitle": "News",
         "text": "News"
-      }
+      },
+      "blockClass": "footer-options"
     }
   },
   "menu-item#blackfriday": {
@@ -37,7 +38,8 @@
         "noFollow": false,
         "tagTitle": "BlackFriday",
         "text": "Black Friday"
-      }
+      },
+      "blockClass": "footer-options"
     }
   },
   "menu-item#sale": {
@@ -52,7 +54,8 @@
         "noFollow": false,
         "tagTitle": "Sale",
         "text": "Sale"
-      }
+      },
+      "blockClass": "footer-options"
     }
   },
   "menu-item#personalization": {
@@ -67,13 +70,15 @@
         "noFollow": false,
         "tagTitle": "Personalization",
         "text": "Personalization"
-      }
+      },
+      "blockClass": "footer-options"
     }
   },
 
   "vtex.menu@2.x:menu#footer-decoration": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "footer-options"
     },
     "children": [
       "menu-item#smartphones",
@@ -94,7 +99,8 @@
         "noFollow": true,
         "tagTitle": "Smartphones",
         "text": "Smartphones"
-      }
+      },
+      "blockClass": "footer-options"
     }
   },
 
@@ -110,7 +116,8 @@
         "noFollow": true,
         "tagTitle": "Videogames",
         "text": "Videogames"
-      }
+      },
+      "blockClass": "footer-options"
     }
   },
 
@@ -126,13 +133,15 @@
         "noFollow": true,
         "tagTitle": "TVs",
         "text": "TVs"
-      }
+      },
+      "blockClass": "footer-options"
     }
   },
 
   "vtex.menu@2.x:menu#footer-bags": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "footer-options"
     },
     "children": [
       "menu-item#bags",
@@ -153,7 +162,8 @@
         "noFollow": true,
         "tagTitle": "Bags",
         "text": "Bags"
-      }
+      },
+      "blockClass": "footer-options"
     }
   },
 
@@ -169,7 +179,8 @@
         "noFollow": true,
         "tagTitle": "Backpacks",
         "text": "Backpacks"
-      }
+      },
+      "blockClass": "footer-options"
     }
   },
 
@@ -185,36 +196,99 @@
         "noFollow": true,
         "tagTitle": "Necessaire",
         "text": "Necessaire"
-      }
+      },
+      "blockClass": "footer-options"
     }
   },
 
   "vtex.menu@2.x:menu#footer-clothing": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "footer-options"
     },
     "children": [
-      "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
+      "menu-item#telefone",
+      "menu-item#whatsapp",
+      "menu-item#email"
     ]
   },
 
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "footer-mobile"
     },
     "children": [
-      "menu-item#clothing-mobile",
-      "menu-item#decoration-mobile",
-      "menu-item#sale-mobile"
+      "menu-item#atendimento-mobile",
+      "menu-item#institucional-mobile",
+      "menu-item#ajudaSuporte-mobile",
+      "menu-item#nossoAtelie-mobile",
+      "menu-item#enxoval-mobile",
+      "rich-text#redes-sociais-mobile",
+      "flex-layout.row#social-networks-mobile"
     ]
   },
 
-  "menu-item#clothing-mobile": {
+  "menu-item#atendimento-mobile": {
+    "props": {
+      "id": "menu-item-atendimento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      },
+      "blockClass": "footer-options"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#atendimento"]
+  },
+  "vtex.menu@2.x:submenu.accordion#atendimento": {
+    "children": ["vtex.menu@2.x:menu#atendimento-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#atendimento-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-options"
+    },
+    "children": [
+      "menu-item#telefone",
+      "menu-item#whatsapp",
+      "menu-item#email"
+    ]
+  },
+
+  "menu-item#institucional-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      },
+      "blockClass": "footer-options"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#institucional"]
+  },
+  "vtex.menu@2.x:submenu.accordion#institucional": {
+    "children": ["vtex.menu@2.x:menu#footer-institucional-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-institucional-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-options"
+    },
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#clube-merci",
+      "menu-item#fale-conosco"
+    ]
+  },
+
+  "menu-item#quem-somos": {
     "props": {
       "id": "menu-item-category-clothing",
       "type": "custom",
@@ -224,78 +298,13 @@
         "type": "internal",
         "href": "/clothing/d",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+        "tagTitle": "Quem somos",
+        "text": "Quem somos"
+      },
+      "blockClass": "footer-options-intern"
+    }
   },
-  "vtex.menu@2.x:submenu.accordion#clothing": {
-    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
-  },
-
-  "vtex.menu@2.x:menu#clothing-accordion": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
-    ]
-  },
-
-  "menu-item#decoration-mobile": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Decoration",
-        "text": "Decoration"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
-  },
-  "vtex.menu@2.x:submenu.accordion#decoration": {
-    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
-  },
-
-  "vtex.menu@2.x:menu#footer-decoration-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
-  },
-
-  "menu-item#sale-mobile": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
-  },
-  "vtex.menu@2.x:submenu.accordion#sale": {
-    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
-  },
-
-  "vtex.menu@2.x:menu#footer-sale-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
-  },
-
-  "menu-item#clothing": {
+  "menu-item#clube-merci": {
     "props": {
       "id": "menu-item-category-clothing",
       "type": "custom",
@@ -305,13 +314,122 @@
         "type": "internal",
         "href": "/clothing/d",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
+        "tagTitle": "Clube Merci",
+        "text": "Clube Merci"
+      },
+      "blockClass": "footer-options-intern"
+    }
+  },
+  "menu-item#fale-conosco": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Fale Conosco",
+        "text": "Fale Conosco"
+      },
+      "blockClass": "footer-options-intern"
     }
   },
 
-  "menu-item#shorts": {
+  "menu-item#ajudaSuporte-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Ajuda e Suporte",
+        "text": "Ajuda e Suporte"
+      },
+      "blockClass": "footer-options"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#ajudaSuporte"]
+  },
+  "vtex.menu@2.x:submenu.accordion#ajudaSuporte": {
+    "children": ["vtex.menu@2.x:menu#footer-ajudaSuporte-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-ajudaSuporte-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#trocas-devolucoes",
+      "menu-item#politica-privacidade",
+      "menu-item#politica-entrega"
+    ]
+  },
+
+  "menu-item#trocas-devolucoes": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Trocas e Devoluções",
+        "text": "Trocas e Devoluções"
+      },
+      "blockClass": "footer-options-intern"
+    }
+  },
+  "menu-item#politica-privacidade": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Politica de Privacidade",
+        "text": "Politica de Privacidade"
+      },
+      "blockClass": "footer-options-intern"
+    }
+  },
+  "menu-item#politica-entrega": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Politica de Entrega",
+        "text": "Politica de Entrega"
+      },
+      "blockClass": "footer-options-intern"
+    }
+  },
+
+
+  "menu-item#telefone": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Telefone",
+        "text": "Telefone: +55 31 3517-8129"
+      },
+      "blockClass": "footer-options-intern"
+    }
+  },
+
+  "menu-item#whatsapp": {
     "props": {
       "id": "menu-item-shorts",
       "type": "custom",
@@ -321,13 +439,14 @@
         "type": "internal",
         "href": "/clothing/shorts",
         "noFollow": false,
-        "tagTitle": "Shorts",
-        "text": "Shorts"
-      }
+        "tagTitle": "Whatsapp",
+        "text": "Whatsapp: +55 31 99169-7664"
+      },
+      "blockClass": "footer-options-intern"
     }
   },
 
-  "menu-item#tank-tops": {
+  "menu-item#email": {
     "props": {
       "id": "menu-item-tank-tops",
       "type": "custom",
@@ -337,57 +456,178 @@
         "type": "internal",
         "href": "/clothing/tank-tops",
         "noFollow": false,
-        "tagTitle": "Tank tops",
-        "text": "Tank tops"
-      }
+        "tagTitle": "Email",
+        "text": "Email: contato@merciwithlove.com.br"
+      },
+      "blockClass": "footer-options-intern"
     }
   },
-
-  "menu-item#shirts": {
+  "menu-item#nossoAtelie-mobile": {
     "props": {
-      "id": "menu-item-shirts",
+      "id": "menu-item-atendimento",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/shirts",
-        "noFollow": false,
-        "tagTitle": "Shirts",
-        "text": "Shirts"
-      }
-    }
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Nosso Ateliê BH",
+        "text": "Nosso Ateliê BH"
+      },
+      "blockClass": "footer-options"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#nossoAtelie"]
+  },
+  "vtex.menu@2.x:submenu.accordion#nossoAtelie": {
+    "children": ["vtex.menu@2.x:menu#nossoAtelie-accordion"]
   },
 
-  "menu-item#sweatshirt": {
+  "vtex.menu@2.x:menu#nossoAtelie-accordion": {
     "props": {
-      "id": "menu-item-sweat-shirts",
+      "orientation": "vertical",
+      "blockClass": "footer-options"
+    },
+    "children": [
+      "menu-item#endereco",
+      "menu-item#cep",
+      "menu-item#segunda-sexta",
+      "menu-item#sabado",
+      "menu-item#domingo"
+    ]
+  },
+
+  "menu-item#endereco": {
+    "props": {
+      "id": "menu-item-tank-tops",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/sweatshirt",
+        "href": "/clothing/tank-tops",
         "noFollow": false,
-        "tagTitle": "Sweatshirt",
-        "text": "Sweatshirt"
-      }
+        "tagTitle": "Endereco",
+        "text": "Rua Ministro Orozimbo Nonato nº 102, sala 1104, Nova Lima/MG"
+      },
+      "blockClass": "footer-options-intern"
     }
   },
-
-  "menu-item#cropped": {
+  "menu-item#cep": {
     "props": {
-      "id": "menu-item-cropped",
+      "id": "menu-item-tank-tops",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/cropped",
+        "href": "/clothing/tank-tops",
         "noFollow": false,
-        "tagTitle": "Cropped",
-        "text": "Cropped"
-      }
+        "tagTitle": "cep",
+        "text": "CEP: 34006-053"
+      },
+      "blockClass": "footer-options-intern"
+    }
+  },
+  "menu-item#segunda-sexta": {
+    "props": {
+      "id": "menu-item-tank-tops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/tank-tops",
+        "noFollow": false,
+        "tagTitle": "segunda-sexta",
+        "text": "Segunda-Sexta: 10.00 - 19.00"
+      },
+      "blockClass": "footer-options-intern"
+    }
+  },
+  "menu-item#sabado": {
+    "props": {
+      "id": "menu-item-tank-tops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/tank-tops",
+        "noFollow": false,
+        "tagTitle": "sabado",
+        "text": "Sábado: 10.00 - 14.00"
+      },
+      "blockClass": "footer-options-intern"
+    }
+  },
+  "menu-item#domingo": {
+    "props": {
+      "id": "menu-item-tank-tops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/tank-tops",
+        "noFollow": false,
+        "tagTitle": "domingo",
+        "text": "Domingo: Fechado"
+      },
+      "blockClass": "footer-options-intern"
+    }
+  },
+
+  "menu-item#enxoval-mobile": {
+    "props": {
+      "id": "menu-item-atendimento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Enxoval Merci",
+        "text": "Enxoval Merci"
+      },
+      "blockClass": "footer-options"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#enxoval"]
+  },
+  "vtex.menu@2.x:submenu.accordion#enxoval": {
+    "children": ["vtex.menu@2.x:menu#enxoval-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#enxoval-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-options"
+    },
+    "children": [
+      "menu-item#conheca"
+    ]
+  },
+  "menu-item#conheca": {
+    "props": {
+      "id": "menu-item-tank-tops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/tank-tops",
+        "noFollow": false,
+        "tagTitle": "Conheca",
+        "text": "Conheça mais formas de personalizar o seu enxoval Merci"
+      },
+      "blockClass": "footer-options-intern"
+    }
+  },
+  "rich-text#redes-sociais-mobile": {
+    "props": {
+      "text": "Redes Sociais",
+      "blockClass": "redes-sociais-mobile"
     }
   }
 }

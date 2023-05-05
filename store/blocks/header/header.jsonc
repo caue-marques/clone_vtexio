@@ -15,8 +15,7 @@
     "children": [
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "header-row#4-desktop"
     ]
   },
   "flex-layout.row#1-desktop": {
@@ -29,37 +28,39 @@
   },
   "flex-layout.row#2-desktop": {
     "children": [
-      "notification.bar#home"
+      "flex-layout.row#barhome"
     ],
     "props": {
       "fullWidth": "true"
     }
   },
-  "notification.bar#home": {
+  "flex-layout.row#barhome": {
+    "children": [
+      "rich-text#produtos-personalizados",
+      "rich-text#vezes-juros"
+    ],
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "blockClass": "home-notification-bar"
     }
   },
-  "flex-layout.row#3-desktop": {
+  "rich-text#produtos-personalizados": {
     "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
+      "text": "\nPRODUTOS PERSONALIZADOS",
+      "blockClass": "produtos-personalizados"
+    }
+  },
+  "rich-text#vezes-juros": {
+    "props": {
+      "text": "\n EM ATÉ 3X SEM JUROS",
+      "blockClass": "vezes-juros"
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
     }
   },
-  "sticky-layout#4-desktop": {
+  "header-row#4-desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
@@ -79,9 +80,7 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
+      "logo#searchIconDesktop",
       "login",
       "minicart.v2"
     ]
@@ -99,15 +98,115 @@
       "verticalAlign": "middle"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-menu"
+      "flex-layout.row#menu"
     ]
   },
+  "flex-layout.row#menu-desktop": {
+    "children": [
+      "flex-layout.col#col1-desktop",
+      "flex-layout.col#col2-desktop",
+      "flex-layout.col#col3-desktop",
+      "flex-layout.col#col4-desktop",
+      "flex-layout.col#col5-desktop",
+      "flex-layout.col#col6-desktop",
+      "flex-layout.col#col7-desktop"
+    ],
+    "props": {
+      "blockClass": "rowNavDekstop",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#col1-desktop": {
+    "children": [
+      "rich-text#viagens"
+    ]
+  },
+  "rich-text#viagens": {
+    "props": {
+      "text": "VIAGENS",
+      "blockClass": "text-header-desktop"
+    }
+  },
+
+  "flex-layout.col#col2-desktop": {
+    "children": [
+      "rich-text#para-ela"
+    ]
+  },
+  "rich-text#para-ela": {
+    "props": {
+      "text": "PARA ELA",
+      "blockClass": "text-header-desktop"
+    }
+  },
+  "flex-layout.col#col3-desktop": {
+    "children": [
+      "rich-text#para-ele"
+    ]
+  },
+  "rich-text#para-ele": {
+    "props": {
+      "text": "PARA ELE",
+      "blockClass": "text-header-desktop"
+    }
+  },
+
+  "flex-layout.col#col4-desktop": {
+    "children": [
+      "rich-text#infantil"
+    ]
+  },
+  "rich-text#infantil": {
+    "props": {
+      "text": "INFANTIL",
+      "blockClass": "text-header-desktop"
+    }
+  },
+
+  "flex-layout.col#col5-desktop": {
+    "children": [
+      "rich-text#dia-dia"
+    ]
+  },
+  "rich-text#dia-dia": {
+    "props": {
+      "text": "DIA A DIA",
+      "blockClass": "text-header-desktop"
+    }
+  },
+
+  "flex-layout.col#col6-desktop": {
+    "children": [
+      "rich-text#pronta-entrega"
+    ]
+  },
+  "rich-text#pronta-entrega": {
+    "props": {
+      "text": "PRONTA ENTREGA",
+      "blockClass": "text-header-desktop"
+    }
+  },
+
+  "flex-layout.col#col7-desktop": {
+    "children": [
+      "rich-text#sale"
+    ]
+  },
+  "rich-text#sale": {
+    "props": {
+      "text": "SALE",
+      "blockClass": "text-header-desktop"
+    }
+  },
+
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/logo@2x.png",
+      "width": "105",
+      "height": "101",
+      "blockClass": "logoDesktop"
     }
   },
   "header-layout.mobile": {
@@ -117,27 +216,23 @@
     ]
   },
   "flex-layout.row#2-mobile": {
-    "children": [
-      "notification.bar#homeMobile"
-    ]
-  },
-  "notification.bar#homeMobile": {
     "props": {
-      "content": "-"
+      "blockClass": "notificationBar"
     }
   },
   "header-row#1-mobile": {
     "children": [
       "flex-layout.row#1-mobile"
-    ]
+    ],
+    "props": {
+      "blockClass": "header-mobile"
+    }
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
       "logo#searchIconMobile",
-      "flex-layout.col#spacer",
       "logo#mobile",
-      "flex-layout.col#spacer",
       "login#mobile",
       "minicart.v2"
     ],
@@ -149,6 +244,9 @@
     }
   },
   "drawer": {
+    "props": {
+      "maxWidth": 844
+    },
     "children": [
       "menu#drawer"
     ]
@@ -176,7 +274,15 @@
         "noFollow": false,
         "tagTitle": "VIAGENS",
         "text": "VIAGENS"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "menu-item#category-paraEla": {
@@ -188,7 +294,15 @@
         "noFollow": false,
         "tagTitle": "PARA ELA",
         "text": "PARA ELA"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "menu-item#category-paraEle": {
@@ -200,7 +314,15 @@
         "noFollow": false,
         "tagTitle": "PARA ELE",
         "text": "PARA ELE"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "menu-item#category-infantil": {
@@ -212,7 +334,15 @@
         "noFollow": false,
         "tagTitle": "INFANTIL",
         "text": "INFANTIL"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "menu-item#category-diaDia": {
@@ -224,7 +354,15 @@
         "noFollow": false,
         "tagTitle": "DIA A DIA",
         "text": "DIA A DIA"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "menu-item#category-prontaEntrega": {
@@ -236,7 +374,15 @@
         "noFollow": false,
         "tagTitle": "PRONTA ENTREGA",
         "text": "PRONTA ENTREGA"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "menu-item#category-sale": {
@@ -248,7 +394,15 @@
         "noFollow": false,
         "tagTitle": "SALE",
         "text": "SALE"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "gray",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
     }
   },
   "login#mobile": {
@@ -256,12 +410,23 @@
       "showIconProfile": true
     }
   },
+  "logo#searchIconDesktop": {
+    "props": {
+      "title": "Search Icon",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/ico-search.png",
+      "width": "30",
+      "height": "30",
+      "blockClass": "searchDesktop"
+    }
+  },
   "logo#searchIconMobile": {
     "props": {
       "title": "Search Icon",
       "href": "/",
-      "url": "https://img.icons8.com/ios-glyphs/256/search.png",
-      "width": "30"
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/ico-search.png",
+      "width": "50",
+      "blockClass": "searchIconMobile"
     }
   },
   "logo#mobile": {

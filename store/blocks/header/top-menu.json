@@ -1,43 +1,374 @@
 {
-  "vtex.menu@2.x:menu#websites": {
+  "flex-layout.row#menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "vtex.menu@2.x:menu#menu-nv1"
     ]
   },
-  "menu-item#shop": {
+  "vtex.menu@2.x:menu#menu-nv1": {
+    "children": [
+      "menu-item#menu-item-01-nv1",
+      "menu-item#menu-item-02-nv1",
+      "menu-item#menu-item-03-nv1",
+      "menu-item#menu-item-04-nv1",
+      "menu-item#menu-item-05-nv1",
+      "menu-item#menu-item-06-nv1",
+      "menu-item#menu-item-07-nv1"
+    ],
     "props": {
-      "id": "menu-item-shop",
+      "blockClass": "text-header-desktop"
+    }
+  },
+  "menu-item#menu-item-01-nv1": {
+    "props": {
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
+        "tagTitle": "Viagens",
+        "text": "VIAGENS"
+      },
+      "blockClass": [
+        "text-header-desktop"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#menu-01-nv2"
     ]
   },
-  "menu-item#vtex-website": {
+
+  "menu-item#menu-item-02-nv1": {
     "props": {
-      "id": "menu-item-vtex-website",
       "type": "custom",
-      "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
-      }
+        "tagTitle": "para-ela",
+        "text": "PARA ELA"
+      },
+      "blockClass": [
+        "text-header-desktop"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#menu-01-nv2"
+    ]
+  },
+
+  "menu-item#menu-item-03-nv1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "para-ele",
+        "text": "PARA ELE"
+      },
+      "blockClass": [
+        "text-header-desktop"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#menu-01-nv2"
+    ]
+  },
+
+  "menu-item#menu-item-04-nv1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "infantil",
+        "text": "INFANTIL"
+      },
+      "blockClass": [
+        "text-header-desktop"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#menu-01-nv2"
+    ]
+  },
+
+  "menu-item#menu-item-05-nv1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "dia-a-dia",
+        "text": "DIA A DIA"
+      },
+      "blockClass": [
+        "text-header-desktop"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#menu-01-nv2"
+    ]
+  },
+
+  "menu-item#menu-item-06-nv1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "pronta-entrega",
+        "text": "PRONTA ENTREGA"
+      },
+      "blockClass": [
+        "text-header-desktop"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#menu-01-nv2"
+    ]
+  },
+
+  "menu-item#menu-item-07-nv1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "sale",
+        "text": "SALE"
+      },
+      "blockClass": [
+        "text-header-desktop"
+      ]
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#menu-01-nv2"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu#menu-01-nv2": {
+    "children": [
+      "vtex.menu@2.x:menu#menu-items-02-nv2"
+    ],
+    "props": {
+      "blockClass": [
+        "menu-nv2"
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#menu-items-02-nv2": {
+    "children": [
+      "menu-item#menu-item-01-nv2"
+    ],
+    "props": {
+      "blockClass": [
+        "menu-nv2"
+      ]
+    }
+  },
+  "menu-item#menu-item-01-nv2": {
+    "children": [
+      "flex-layout.row#row-item-01-nv2"
+    ],
+    "props": {
+      "blockClass": "item-01-nv2"
+    }
+  },
+  "flex-layout.row#row-item-01-nv2": {
+    "children": [
+      "flex-layout.col#imagens-item-01-nv2",
+      "flex-layout.col#conteudo-item-01-nv2"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "row-geral-dropdown"
+    }
+  },
+  "flex-layout.col#imagens-item-01-nv2": {
+    "children":[
+      "image#img1-item-01-nv2",
+      "image#img2-item-01-nv2"
+    ],
+    "props": {
+      "blockClass": "col-imagens-item-01-nv2"
+    }
+  },
+  "image#img1-item-01-nv2": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/viagemm_femino.jpg?v=637099714696630000",
+      "blockClass": "img-obj1-item-01-nv2"
+    }
+  },
+  "image#img2-item-01-nv2": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/Viagem_masculino.jpg?v=637099714687130000",
+      "blockClass": "img-obj1-item-01-nv2"
+    }
+  },
+  "flex-layout.col#conteudo-item-01-nv2": {
+    "children": [
+      "rich-text#title-item-01-nv2",
+      "flex-layout.row#objetos-item-01-nv2",
+      "rich-text#link-item-01-nv2"
+    ],
+    "props": {
+      "blockClass": "conteudo-item-01-nv2"
+    }
+  },
+  "rich-text#title-item-01-nv2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "FEMININOS",
+      "blockClass": "title-item-01-nv2"
+    }
+  },
+  "flex-layout.row#objetos-item-01-nv2": {
+    "children": [
+      "flex-layout.col#obj1-item-01-nv2",
+      "flex-layout.col#obj2-item-01-nv2",
+      "flex-layout.col#obj3-item-01-nv2",
+      "flex-layout.col#obj4-item-01-nv2",
+      "flex-layout.col#obj5-item-01-nv2"
+    ],
+    "props": {
+      "blockClass": "row-objetos-item-01-nv2"
+    }
+  },
+  "flex-layout.col#obj1-item-01-nv2": {
+    "children": [
+      "image#img-obj1-item-01-nv2",
+      "rich-text#text-img-obj1-item-01-nv2"
+    ],
+    "props": {
+      "blockClass": "col-obj1-item-01-nv2"
+    }
+  },
+  "image#img-obj1-item-01-nv2": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/viagem-carteira-fem.jpg?v=637112447330800000",
+      "blockClass": "miniImg-obj1-item-01-nv2"
+    }
+  },
+  "rich-text#text-img-obj1-item-01-nv2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Carteira",
+      "blockClass": "text-img-obj1-item-01-nv2"
+    }
+  },
+
+  "flex-layout.col#obj2-item-01-nv2": {
+    "children": [
+      "image#img-obj2-item-01-nv2",
+      "rich-text#text-img-obj2-item-01-nv2"
+    ],
+    "props": {
+      "blockClass": "col-obj1-item-01-nv2"
+    }
+  },
+  "image#img-obj2-item-01-nv2": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/viagem-passaporte-fem.jpg?v=637112447410830000",
+      "blockClass": "miniImg-obj1-item-01-nv2"
+    }
+  },
+  "rich-text#text-img-obj2-item-01-nv2": {
+    "props": {
+      "text": "Passaporte",
+      "blockClass": "text-img-obj1-item-01-nv2"
+    }
+  },
+
+  "flex-layout.col#obj3-item-01-nv2": {
+    "children": [
+      "image#img-obj3-item-01-nv2",
+      "rich-text#text-img-obj3-item-01-nv2"
+    ],
+    "props": {
+      "blockClass": "col-obj1-item-01-nv2"
+    }
+  },
+  "image#img-obj3-item-01-nv2": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/viagem-porta-joias-fem.jpg?v=637112447430830000",
+      "blockClass": "miniImg-obj1-item-01-nv2"
+    }
+  },
+  "rich-text#text-img-obj3-item-01-nv2": {
+    "props": {
+      "text": "Porta Jóias",
+      "blockClass": "text-img-obj1-item-01-nv2"
+    }
+  },
+
+  "flex-layout.col#obj4-item-01-nv2": {
+    "children": [
+      "image#img-obj4-item-01-nv2",
+      "rich-text#text-img-obj4-item-01-nv2"
+    ],
+    "props": {
+      "blockClass": "col-obj1-item-01-nv2"
+    }
+  },
+  "image#img-obj4-item-01-nv2": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/viagem-tag-fem.jpg?v=637112447440930000",
+      "blockClass": "miniImg-obj1-item-01-nv2"
+    }
+  },
+  "rich-text#text-img-obj4-item-01-nv2": {
+    "props": {
+      "text": "Tag de malas",
+      "blockClass": "text-img-obj1-item-01-nv2"
+    }
+  },
+
+  "flex-layout.col#obj5-item-01-nv2": {
+    "children": [
+      "image#img-obj5-item-01-nv2",
+      "rich-text#text-img-obj5-item-01-nv2"
+    ],
+    "props": {
+      "blockClass": "col-obj1-item-01-nv2"
+    }
+  },
+  "image#img-obj5-item-01-nv2": {
+    "props": {
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/nec-menu.jpg?v=637189290494500000",
+      "blockClass": "miniImg-obj1-item-01-nv2"
+    }
+  },
+  "rich-text#text-img-obj5-item-01-nv2": {
+    "props": {
+      "text": "Necessaires",
+      "blockClass": "text-img-obj1-item-01-nv2"
+    }
+  },
+
+
+  "rich-text#link-item-01-nv2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":  "[Monte o seu Kit](https://developers.vtex.com/vtex-developer-docs/docs/welcome)",
+      "blockClass": "link-item-01-nv2"
     }
   }
 }
