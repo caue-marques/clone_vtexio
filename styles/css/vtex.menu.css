@@ -72,9 +72,13 @@
 }
 
 .menuContainerNav--menu-nv2, .menuItem--item-01-nv2 {
-    width: 100%;
+    width: 100% !important;
 }
 
 .styledLinkContainer--item-01-nv2 {
     display: none;
+}
+
+.menuContainerNav {
+    width: 95%;
 }
