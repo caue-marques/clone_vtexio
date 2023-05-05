@@ -1,9 +1,8 @@
 .styledLinkContent {
-    letter-spacing: 0.08em;
     flex-direction: row-reverse;
     padding: 1.15em 0;
-    color: inherit;
-    font-size: .9rem;
+    color: #545454;
+    font-size: .85rem;
     font-family: Montserrat Semibold, Arial, sans-serif;
     justify-content: left;
 }
@@ -38,9 +37,7 @@
     flex-wrap: wrap;
 }
 
-.menuContainerNav {
-    width: 95%;
-}
+
 
 .styledLinkContainer {
     position: relative;
@@ -52,10 +49,32 @@
 }
 
 .submenu--menu-nv2 {
-    width: 1200px;
     height: 450px;
 }
 
 .submenuWrapper--menu-nv2 {
-    box-shadow: 8px 4px 8px 4px rgba(0, 0, 0, 0.2), 1px 6px 20px 6px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, .20);
+}
+
+.styledLinkContainer--text-header-desktop {
+    margin: 0 7px;
+}
+
+.submenuWrapper--menu-nv2 {
+    width: 1100px;
+    left: 50%;
+    top: 16%;
+    transform: translateX(-50%);
+}
+
+.submenuContainer--menu-nv2 {
+    position: initial;
+}
+
+.menuContainerNav--menu-nv2, .menuItem--item-01-nv2 {
+    width: 100%;
+}
+
+.styledLinkContainer--item-01-nv2 {
+    display: none;
 }

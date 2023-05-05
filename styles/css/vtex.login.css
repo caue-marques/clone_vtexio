@@ -43,3 +43,7 @@
         height: 2.1rem;
     }
 }
+
+:global(.vtex-flex-layout-0-x-flexRowContent--row-geral-dropdown .vtex-flex-layout-0-x-stretchChildrenWidth:last-child) {
+    flex: 1;
+}

@@ -247,7 +247,6 @@
       "flex-layout.col#obj5-item-01-nv2"
     ],
     "props": {
-      "colSizing":"auto",
       "blockClass": "row-objetos-item-01-nv2"
     }
   },

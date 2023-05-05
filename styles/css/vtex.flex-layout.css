@@ -412,7 +412,7 @@
 }
 
 .flexRowContent--vitrine :global(.vtex-slider-layout-0-x-sliderTrackContainer) {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .flexRowContent--social-networks-mobile {
@@ -428,6 +428,8 @@
 
 .flexCol--col-imagens-item-01-nv2  {
   height: 100%;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 
 .flexColChild--col-imagens-item-01-nv2 :global(.vtex-store-components-3-x-imageElement) {
@@ -438,12 +440,10 @@
 
 .flexColChild--conteudo-item-01-nv2 {
   height: auto !important;
-  width: 130%;
-  margin-left: 25px;
 }
 
 .flexCol--conteudo-item-01-nv2 {
-  gap: 3rem;
+  gap: 1.5rem;
 }
 
 .flexRow--row-geral-dropdown {
