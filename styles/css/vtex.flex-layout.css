@@ -401,6 +401,10 @@
     width: 55%;
     gap: 0.1rem;
   }
+
+  .flexRowContent--vitrine :global(.vtex-slider-layout-0-x-sliderTrackContainer) {
+    margin-bottom: 50px;
+  }
 }
 
 .flexRowContent--imagens-payment-methods {
@@ -411,8 +415,12 @@
   align-items: center;
 }
 
-.flexRowContent--vitrine :global(.vtex-slider-layout-0-x-sliderTrackContainer) {
-  margin-bottom: 50px;
+
+
+@media screen and(min-width: 300px) and (max-width: 1023px){
+  .flexRowContent--vitrine :global(.vtex-slider-layout-0-x-sliderTrackContainer) {
+    margin-bottom: 0px;
+  }
 }
 
 .flexRowContent--social-networks-mobile {
